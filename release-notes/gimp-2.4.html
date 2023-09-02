@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - GIMP 2.4 Release Notes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='gimp-2.4.html' />
+        <meta itemprop='name' content='GIMP - GIMP 2.4 Release Notes' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='gimp-2.4.html' />
+        <meta property='og:title' content='GIMP - GIMP 2.4 Release Notes' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Pat David' />
+        <meta property='og:author' content='Pat David' />
+
+        <meta itemprop='description' content="General Improvements¶ Refreshed Look¶ A whole new default icon theme has been created for 2.4. The icons comply with the Tango style guidelines so GIMP doesn’t feel out of place on any of the supported platforms. Regardless of whether you run GIMP under Microsoft Windows, Mac OS X …" />
+        <meta property='og:description' content="General Improvements¶ Refreshed Look¶ A whole new default icon theme has been created for 2.4. The icons comply with the Tango style guidelines so GIMP doesn’t feel out of place on any of the supported platforms. Regardless of whether you run GIMP under Microsoft Windows, Mac OS X …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="../docs/index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="../docs/index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1><span class="caps">GIMP</span> 2.4 Release&nbsp;Notes</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <h2 id="general-improvements">General Improvements<a class="headerlink" href="#general-improvements" title="Permanent link">&para;</a></h2>
+<h3 id="refreshed-look">Refreshed Look<a class="headerlink" href="#refreshed-look" title="Permanent link">&para;</a></h3>
+<p>A whole new default icon theme has been created for 2.4. The icons comply with the <a href="http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines">Tango style guidelines</a> so <span class="caps">GIMP</span> doesn&#8217;t feel out of place on any of the supported platforms. Regardless of whether you run <span class="caps">GIMP</span> under Microsoft Windows, Mac <span class="caps">OS</span> X or <span class="caps">GNU</span>/Linux (<a href="https://www.gnome.org/"><span class="caps">GNOME</span></a>, <a href="https://www.kde.org/"><span class="caps">KDE</span></a> or <a href="https://www.xfce.org/">Xfce</a>), <span class="caps">GIMP</span> provides a polished, consistent&nbsp;look.</p>
+<figure>
+<img src="images/2.4-refreshed-look.png" alt="Refreshed Look"/>
+</figure>
+
+<p>Additionally the icons also have enhanced usability on dark widget themes, which is a common setting among digital&nbsp;artists.</p>
+<p>For artists preferring more desaturated color theme for their icons, an <a href="http://jimmac.musichall.cz/zip/GIMP-Greyscale-tools-0.1.tar.bz2">alternative icon theme</a> is available for&nbsp;download.</p>
+<h3 id="scalable-brushes">Scalable Brushes<a class="headerlink" href="#scalable-brushes" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-scalable-brushes.png" alt="Scalable Brushes"/>
+</figure>
+
+<p>The tool options now include a brush size slider that affects both the parametric and bitmap brushes. This has been an oft-requested feature from both digital painters and photo&nbsp;editors.</p>
+<p>Unlike previous versions of <span class="caps">GIMP</span>, regardless of whether you&#8217;re using a bitmap brush, parametric brush or even a picture tube (multiple bitmaps), you can easily set the brush size with either the tool options dock slider or an external device such as a <span class="caps">MIDI</span> slider or knob or a <span class="caps">USB</span> device like the Griffin&nbsp;Powermate.</p>
+<h3 id="selection-tools">Selection Tools<a class="headerlink" href="#selection-tools" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-selection-tools.png" alt="Selection Tools"/>
+</figure>
+
+<p>The selection tools have been rewritten from scratch to allow resizing of existing selections. Additionally the rectangular selection tool includes a setting for creating rounded corners as this has been identified as a very common task among web&nbsp;designers.</p>
+<p>The learning curve for the tools has been flattened as the key functionality is available without obscure shortcuts that confused <span class="caps">GIMP</span> beginners. Most of the existing shortcuts still work, but the functionality is either available through the tool options or made obsolete due to the interactive move and resize on&nbsp;canvas.</p>
+<p>While the tools have been redesigned to make them easier to understand for the newbies, all the former functionality is there. You can still constrain aspect ratios or specific&nbsp;sizes.</p>
+<h3 id="foreground-select-tool">Foreground Select Tool<a class="headerlink" href="#foreground-select-tool" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-video-fgselect.jpg" alt="Foreground Select Demo"/>
+</figure>
+
+<p>Selecting individual objects on images is easier now with a new foreground select tool. It is done in two steps. First, you make select region of interest which contains the entire object. Then you paint over selected area with a brush, not crossing object’s border. Release mouse button when you’re done and look, if there are dark blue spots on your objects. If there are some, paint with a brush over them again and release to refine selection. When there are no more blue areas inside the object, press Enter and there you have a perfectly selected&nbsp;object.</p>
+<p><small>All video demonstrations can also be viewed or downloaded from a <a href="gimp-2.4-videos.html">separate page</a>.</small></p>
+<h3 id="align-tool">Align Tool<a class="headerlink" href="#align-tool" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-align-tool.png" alt="Align Tool"/>
+</figure>
+
+<p>While <span class="caps">GIMP</span> has provided a grid and guideline functionality, the actual alignment of objects had to be done manually. In a few clicks, the new Align Tool allows you to align or distribute a list of layers, paths or guides. You can align these objects with another object, with the selection or with the&nbsp;image.</p>
+<h3 id="changes-in-menus">Changes in menus<a class="headerlink" href="#changes-in-menus" title="Permanent link">&para;</a></h3>
+<p>Most notable is the new top-level Color menu that accumulates most tools, plug-ins and scripts that adjust colors in <span class="caps">RGB</span>/Grayscale mode and color palettes in Indexed mode. So now you can reach functions like Levels or Curves much faster than before. You can also define your own keyboard shortcuts for them using the improved keyboard shortcuts&nbsp;manager.</p>
+<p>In the new version of <span class="caps">GIMP</span>, some menu entries have changed their names and position. It was done mostly to simplify learning curve and improve user experience. After all, &#8220;<span class="caps">HSV</span> Noise&#8221; and &#8220;<span class="caps">RGB</span> Noise&#8221; sound more meaningful than &#8220;Scatter <span class="caps">HSV</span>&#8221; and &#8220;Scatter <span class="caps">RGB</span>&#8221;, don&#8217;t they? And status bar hints for all plug-ins and scripts are quite helpful&nbsp;too.</p>
+<h3 id="improved-display-when-zooming-in-or-out">Improved display when zooming in or out<a class="headerlink" href="#improved-display-when-zooming-in-or-out" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-zoom-display.png" alt="Zoomed out display"/>
+</figure>
+
+<p>Previous versions of <span class="caps">GIMP</span> used a fast but inaccurate way of displaying images at various zoom levels. When zooming out, some rows and columns of pixels where simply omitted from the display. The result was sometimes confusing, especially if the image contained many thin lines or small features. <span class="caps">GIMP</span> 2.4 avoids these problems and provides a better view of the zoomed-out&nbsp;images.</p>
+<h3 id="support-for-file-formats">Support for file formats<a class="headerlink" href="#support-for-file-formats" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Support for Photoshop <span class="caps">ABR</span> brush&nbsp;format;</li>
+<li>Improved reading/writing <span class="caps">EXIF</span> in <span class="caps">JPEG</span>;</li>
+<li>Importing clipping paths in <span class="caps">TIFF</span>;</li>
+<li>Layer masks can be saved to <span class="caps">PSD</span>;</li>
+<li>16/32 bit bitmaps and alpha-channel support in <span class="caps">BMP</span>;</li>
+<li>24 bit and Vista icons can be opened and&nbsp;saved.</li>
+</ul>
+<h2 id="digital-photography">Digital Photography<a class="headerlink" href="#digital-photography" title="Permanent link">&para;</a></h2>
+<h3 id="fullscreen-editing">Fullscreen Editing<a class="headerlink" href="#fullscreen-editing" title="Permanent link">&para;</a></h3>
+<p>The fullscreen mode has been improved to not only allow getting a full scale preview of the artwork, but also allow comfortable editing. The artist has maximum screen estate available while all functionality is quickly accessible by pressing the Tab key (toggles visibility of all docks) when working&nbsp;fullscreen.</p>
+<p>Whether painting or touching up photos, fullscreen editing keeps all the distracting elements out of sight on a key press. It&#8217;s like observing stars in a field as opposed to a light-polluted&nbsp;city.</p>
+<h3 id="color-management-and-soft-proofing">Color Management and Soft-proofing<a class="headerlink" href="#color-management-and-soft-proofing" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-color-management.png" alt="Color Management"/>
+</figure>
+
+<p><span class="caps">GIMP</span> now provides full support for color profiles allowing precise color modification throughout the whole &#8216;digital darkroom&#8217;&nbsp;process.</p>
+<p>For more information, see <a href="gimp-2.4-cm.html">color management</a>.</p>
+<h3 id="new-crop-tool">New Crop Tool<a class="headerlink" href="#new-crop-tool" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-crop-tool.png" alt="Crop Tool"/>
+</figure>
+
+<p>Just like the selection tools, the new crop tool has been enhanced since the last release. The resize handles actually resize the crop rectangle instead of providing both resize and move functionality. The tool behaves more naturally and consistently with other <span class="caps">GIMP</span>&nbsp;tools.</p>
+<p>To move, simply drag the rectangle clicking within the area. Resizing is possible in one or two axes at the same time dragging the handle-bars on the sides and corners. The outside area is darkened with a nice passepartout effect to better get the idea of how the final crop will look&nbsp;like.</p>
+<h3 id="improved-printing">Improved Printing<a class="headerlink" href="#improved-printing" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/gimp-24-print-dark.png" alt="Improved Printing"/>
+</figure>
+
+<p>Printing has been largely improved. <span class="caps">GIMP</span> makes use of the advancements in the gtk+ printing <span class="caps">API</span> so that you can control all aspects of the printout with an easy to understand interface and immediate&nbsp;preview.</p>
+<h3 id="red-eye-removal">Red Eye Removal<a class="headerlink" href="#red-eye-removal" title="Permanent link">&para;</a></h3>
+<p>While numerous red-eye workflows exist already, <span class="caps">GIMP</span> now features a very convenient auto-magic filter to remove red eye from your&nbsp;shots.</p>
+<h3 id="perspective-clone">Perspective Clone<a class="headerlink" href="#perspective-clone" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-video-perspective.jpg" alt="Perspective Clone Demo"/>
+</figure>
+
+<p>A common task in image editing is to copy pixels from somewhere in an image to somewhere else. Traditionally this has been done using the Clone Tool. To make it easy to perform cloning while taking the perspective of an image into account, a new Perspective Clone Tool has been added to <span class="caps">GIMP</span>.</p>
+<p><small>All video demonstrations can also be viewed or downloaded from a <a href="gimp-2.4-videos.html">separate page</a>.</small></p>
+<h3 id="lens-distortion">Lens Distortion<a class="headerlink" href="#lens-distortion" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.4-video-lens.jpg" alt="Lens Distortion Demo"/>
+</figure>
+
+<p>A very common problem exposing itself especially when using cheaper lenses or expensive lenses pushed to their limits, is barrel distortion and vignetting. Luckily <span class="caps">GIMP</span> provides a brand new filter to compensate for both problems. Saving photographer&#8217;s pocket is our&nbsp;mission!</p>
+<p><small>All video demonstrations can also be viewed or downloaded from a <a href="gimp-2.4-videos.html">separate page</a>.</small></p>
+<h3 id="jpeg-quality"><span class="caps">JPEG</span> quality<a class="headerlink" href="#jpeg-quality" title="Permanent link">&para;</a></h3>
+<p>When editing photographs, it is usually better to work with a lossless image format and only save the final result as <span class="caps">JPEG</span>. But if you have to work with <span class="caps">JPEG</span> images as input, then a new option allows you to use the same compression parameters as the original image when you re-save&nbsp;it.</p>
+<h2 id="various-other-improvements">Various Other Improvements<a class="headerlink" href="#various-other-improvements" title="Permanent link">&para;</a></h2>
+<p>In addition to all the above, <span class="caps">GIMP</span> has been improved in other areas. For instance, better status information and some hints have been added in the status bar of the image windows. You can easily discover new features and new shortcuts by trying the various keys and modifiers that are suggested while you are using the&nbsp;tools.</p>
+<figure>
+<img src="images/2.4-statusbar-tips.png" alt="Hints in the status bar"/>
+</figure>
+
+<p>A number of changes has gone into plug-ins and scripts. First of all, a new preview widget for plug-ins was introduced. Now you can zoom in and out using the mouse wheel or +/- buttons in plug-in dialogs and pan&nbsp;around.</p>
+<p>Several plug-ins like Gaussian Blur, Selective Gaussian Blur and Value Invert have received special attention with regards to speed of processing and work significantly faster now. Additionally, the Motion Blur filter can blur outwards now, and its quality has also&nbsp;improved.</p>
+<p>You will also note that the new Screenshot plug-in offers more sophisticated options and is far easier to&nbsp;use.</p>
+<figure>
+<img src="images/2.4-screenshot-plugin.png" alt="Screenshot plug-in"/>
+</figure>
+
+<p><span class="caps">GIMP</span> 2.4 features a brand new Scheme interpreter that provides better debugging, handles <span class="caps">UTF</span>-8 coded characters and strings, has regex based pattern matching and many more useful features that power users were requesting. The latter will be pleased to find out that plug-ins and scripts can register menu entries in the &lt;Brushes&gt;, &lt;Gradients&gt;, &lt;Palettes&gt;, &lt;Patterns&gt; and &lt;Fonts&gt; menus now. Also, a fair amount of new scripts were added: reversing the order of layers, sorting color palettes etc. A few scripts that were using incorrect or deprecated constructs may have to be updated. A <a href="../docs/script-fu-update.html">Script-Fu migration guide</a> lists the most common errors and how to fix&nbsp;them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="../docs/index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='../docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../bugs/index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.4.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:56 GMT -->
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.10.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:50:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - GIMP 2.10 Release Notes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='gimp-2.10.html' />
+        <meta itemprop='name' content='GIMP - GIMP 2.10 Release Notes' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='gimp-2.10.html' />
+        <meta property='og:title' content='GIMP - GIMP 2.10 Release Notes' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Wilber' />
+        <meta property='og:author' content='Wilber' />
+
+        <meta itemprop='description' content="Introduction¶ GIMP 2.10 is the result of six years of work that originally focused on porting the program to a new image processing engine, GEGL. However the new version ships with far more new features, including new and improved tools, better file formats support, various usability improvements, revamped color …" />
+        <meta property='og:description' content="Introduction¶ GIMP 2.10 is the result of six years of work that originally focused on porting the program to a new image processing engine, GEGL. However the new version ships with far more new features, including new and improved tools, better file formats support, various usability improvements, revamped color …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="../docs/index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="../docs/index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1><span class="caps">GIMP</span> 2.10 Release&nbsp;Notes</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.10 is the result of six years of work that originally focused on porting
+the program to a new image processing engine, <a href="http://gegl.org/" title="GEGL - Generic Graphics Library"><span class="caps">GEGL</span></a>. However the new version
+ships with far more new features, including new and improved tools, better file
+formats support, various usability improvements, revamped color management
+support, a plethora of improvements targeted at digital painters and
+photographers, metadata editing, and much, much&nbsp;more.</p>
+<h2 id="updated-user-interface-and-initial-hidpi-support">Updated user interface and initial HiDPI support<a class="headerlink" href="#updated-user-interface-and-initial-hidpi-support" title="Permanent link">&para;</a></h2>
+<p>One thing immediately noticeable about <span class="caps">GIMP</span> 2.10 is the new dark theme and
+symbolic icons enabled by default. This is meant to somewhat dim the environment
+and shift the focus towards&nbsp;content.</p>
+<figure>
+    <img src="images/2.10-update-ui.jpg" alt="GIMP 2.10 with dark UI theme and symbolic icon theme" width='960' height='587' />
+</figure>
+
+<p>There are now 4 user interface themes available in <span class="caps">GIMP</span>: Dark (default), Gray,
+Light, and System. Icons are now separate from themes, and we maintain both
+color and symbolic icons, so you can configure <span class="caps">GIMP</span> to have System theme with
+color icons if you prefer the old&nbsp;look.</p>
+<figure>
+    <img src="images/2.10-icon-themes.png" alt="GIMP Icon Themes" width="536" height="572">
+    <figcaption>
+    Color, Legacy, and Symbolic icons
+    </figcaption>
+</figure>
+
+<p>Moreover, icons are available in four sizes now, so that <span class="caps">GIMP</span> would look better
+on HiDPI displays. <span class="caps">GIMP</span> will do its best to detect which size to use, but you
+can manually override that selection in <em>Edit &gt; Preferences &gt; Interface &gt;
+Icon Themes</em>.</p>
+<figure>
+    <img src="images/2.10-icon-sizes.png" alt="GIMP icon sizes" width="832" height="880">
+    <figcaption>
+    Icons in various sizes to adapt for HiDPI displays.
+    </figcaption>
+</figure>
+
+<p><strong>Contributors:</strong> Benoit Touchette, Ville Pätsi, Aryeom Han, Jehan Pagès,
+Alexandre&nbsp;Prokoudine…</p>
+<h2 id="gegl-port-high-bit-depth-support-multi-threading-and-more"><span class="caps">GEGL</span> port, high bit depth support, multi-threading, and more<a class="headerlink" href="#gegl-port-high-bit-depth-support-multi-threading-and-more" title="Permanent link">&para;</a></h2>
+<p>The ultimate goal for v2.10 was completing the port to <span class="caps">GEGL</span> image processing
+library, started with v2.6 when we introduced optional use of <span class="caps">GEGL</span> for color
+tools and an experimental <span class="caps">GEGL</span> tool, and continued with v2.8 where we added
+<span class="caps">GEGL</span>-based projection of&nbsp;layers.</p>
+<p>Now <span class="caps">GIMP</span> uses <span class="caps">GEGL</span> for all tile management and builds an acyclic graph for
+every project. This is a prerequisite for adding non-destructive editing planned
+for&nbsp;v3.2.</p>
+<p>There are many benefits from using <span class="caps">GEGL</span>, and some of them you can already enjoy
+in <span class="caps">GIMP</span>&nbsp;2.10.</p>
+<p><strong>High bit depth support</strong> allows processing images with up to 32-bit per color
+channel precision and open/export <span class="caps">PSD</span>, <span class="caps">TIFF</span>, <span class="caps">PNG</span>, <span class="caps">EXR</span>, and <span class="caps">RGBE</span> files in their
+native fidelity. Additionally, <span class="caps">FITS</span> images can be opened with up to 64-bit per
+channel&nbsp;precision.</p>
+<p><strong>Multi-threading</strong> allows making use of multiple cores for processing. Not all
+features in <span class="caps">GIMP</span> make use of that, it&#8217;s something we intend to work on further.
+A point of interest is that multi-threading happens through <span class="caps">GEGL</span> processing, but
+also in core <span class="caps">GIMP</span> itself, for instance to separate painting from display&nbsp;code.</p>
+<p><strong><span class="caps">GPU</span>-side processing</strong> is still optional, but available for systems with stable
+OpenCL&nbsp;drivers.</p>
+<p>You can find configuration options for multi-threading and hardware acceleration
+in <em>Edit &gt; Preferences &gt; System Resources</em>.</p>
+<p><strong>Contributors:</strong> Michael Natterer, Øyvind Kolås, Ell, Jehan&nbsp;Pagès…</p>
+<h2 id="linear-color-space-workflow">Linear color space workflow<a class="headerlink" href="#linear-color-space-workflow" title="Permanent link">&para;</a></h2>
+<p>Another benefit of using <span class="caps">GEGL</span> is being able to work on images in a linear <span class="caps">RGB</span>
+color space as opposed to gamma-corrected (perceptual) <span class="caps">RGB</span> color&nbsp;space.</p>
+<figure>
+    <img src="../news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-curves-linear.jpg" alt="Curves in linear mode" width='965' height='642' />
+</figure>
+
+<p>Here is what it boils down&nbsp;to:</p>
+<ul>
+<li>You now have both linear and perceptual versions of most blending&nbsp;modes.</li>
+<li>There is now a linear version of the <em>Color Invert</em>&nbsp;command.</li>
+<li>You can freely switch between the two at any time via <em>Image &gt; Precision</em>&nbsp;submenu.</li>
+<li>You can choose which mode is displayed in the <em>Histogram</em>&nbsp;docker.</li>
+<li>You can apply <em>Levels</em> and <em>Curves</em> filters in either perceptual or linear&nbsp;mode</li>
+<li>When higher than 8-bit per channel precision is used, all channels data is&nbsp;linear.</li>
+<li>You can choose whether the gradient tool should work in perceptual <span class="caps">RGB</span>, linear
+<span class="caps">RGB</span>, or <span class="caps">CIE</span> <span class="caps">LAB</span> color&nbsp;space</li>
+</ul>
+<p><strong>Contributors:</strong> Michael Natterer, Øyvind Kolås,&nbsp;Ell…</p>
+<h2 id="color-management-revamped">Color management revamped<a class="headerlink" href="#color-management-revamped" title="Permanent link">&para;</a></h2>
+<p>Color management is now a core feature of <span class="caps">GIMP</span> rather than a plug-in. This
+made it possible, in particular, to introduce color management to all custom
+widgets we could think of: image previews, color and pattern previews&nbsp;etc.</p>
+<figure>
+    <img src="../news/2016/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-preferences-cms.png" alt="Color Management Preferences" width='975' height='920' />
+</figure>
+
+<p><span class="caps">GIMP</span> now uses LittleCMS v2, which allows it to use <span class="caps">ICC</span> v4 color profiles.
+It also partially relies on the babl library for handling color transforms,
+since babl is simply up to 10 times faster than <span class="caps">LCMS2</span> for the cases we tested
+both of them on. Eventually babl could replace LittleCMS in <span class="caps">GIMP</span>.</p>
+<p><strong>Contributors:</strong> Michael Natterer, Øyvind&nbsp;Kolås…</p>
+<h2 id="layers-and-masks">Layers and masks<a class="headerlink" href="#layers-and-masks" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> now ships with two groups of blending modes: legacy (perceptual, mostly
+to make old <span class="caps">XCF</span> files look exactly as before) and default (mostly&nbsp;linear).</p>
+<p>New blend modes&nbsp;are:</p>
+<ul>
+<li><span class="caps">LCH</span> layer modes: Hue, Chroma, Color, and&nbsp;Lightness</li>
+<li>Pass-Through mode for layer&nbsp;groups</li>
+<li>Linear Burn, Vivid Light, Linear Light, Pin Light, Hard Mix, Exclusion, Merge,
+and&nbsp;Split</li>
+</ul>
+<p>Layers, paths, and channels can also be tagged with color labels to improve
+project organization. This will be even more useful once we add multi-layer
+selection later&nbsp;on.</p>
+<p>Compositing options for layers are exposed to users now, and all layer-related
+settings are finally available in the <em>Layer Attributes</em>&nbsp;dialog.</p>
+<figure>
+    <img src="../news/2017/2017-08-24%20GIMP%202.9.6%20Released/gimp-2-9-6-layer-attributes-dialog.png" alt="Updated Layer Attributes dialog" width='608' height='579' />
+</figure>
+
+<p>Moreover, if you always need alpha in your layers, you can enable automatic
+generation of the alpha channel in imported images upon opening them. See
+<em>Edit &gt; Preferences &gt; Image Import <span class="amp">&amp;</span> Export</em> page for this and more&nbsp;policies.</p>
+<p>Layer groups can finally have masks&nbsp;on:</p>
+<figure>
+    <img src="../news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-mask-on-layer-group.jpg" alt="Mask on a layer group" width='950' height='685' />
+</figure>
+
+<h2 id="more-use-for-cie-lab-and-cie-lch">More use for <span class="caps">CIE</span> <span class="caps">LAB</span> and <span class="caps">CIE</span> <span class="caps">LCH</span><a class="headerlink" href="#more-use-for-cie-lab-and-cie-lch" title="Permanent link">&para;</a></h2>
+<p>With <span class="caps">GIMP</span> 2.10, we introduced a number of features that make use of <span class="caps">CIE</span> <span class="caps">LAB</span> and
+<span class="caps">CIE</span> <span class="caps">LCH</span> color&nbsp;spaces:</p>
+<ul>
+<li>Color dialogs now have an <span class="caps">LCH</span> color selector you can use instead of <span class="caps">HSV</span>. The <span class="caps">LCH</span>
+selector also displays out-of-gamut&nbsp;warning.</li>
+<li>A new <em>Hue-Chroma</em> filter in the <em>Colors</em> menu works much like <em>Hue-Saturation</em>,
+but operates in <span class="caps">CIE</span> <span class="caps">LCH</span> color&nbsp;space.</li>
+<li>The <em>Fuzzy Select</em> and the <em>Bucket Fill</em> tools can now select colors by their
+values in <span class="caps">CIE</span> <em>L</em>, <em>C</em>, and <em>H</em>&nbsp;channels.</li>
+<li>Both the <em>Color Picker</em> and the <em>Sample Points</em> dialog now display pixel
+values in <span class="caps">CIE</span> <span class="caps">LAB</span> and <span class="caps">CIE</span> <span class="caps">LCH</span> at your&nbsp;preference.</li>
+</ul>
+<p><strong>Contributors:</strong> Michael Natterer, Elle Stone,&nbsp;Ell…</p>
+<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">&para;</a></h2>
+<h3 id="unified-transform">Unified Transform<a class="headerlink" href="#unified-transform" title="Permanent link">&para;</a></h3>
+<p>
+<video width="960" height="540" controls>
+  <source src="https://download.gimp.org/gimp/video/v2.10/gimp-2-10-0-unified-transform.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
+</p>
+
+<p>New <em>Unified Transform</em> tool simplifies making multiple transforms, such as
+scaling, rotating, and correcting perspective in one go. The design is based
+on a functional spec written by our former <span class="caps">UX</span> expert Peter&nbsp;Sikking.</p>
+<p><strong>Contributors:</strong> Mikael&nbsp;Magnusson…</p>
+<h3 id="warp-transform">Warp Transform<a class="headerlink" href="#warp-transform" title="Permanent link">&para;</a></h3>
+<p>The new <em>Warp Transform</em> tool allows doing localized transforms like growing or
+shifting pixels with a soft brush and undo support. Such tools are commonly used
+in fashion photography for&nbsp;retouching.</p>
+<p>
+<video width="960" height="540" controls>
+  <source src="https://download.gimp.org/gimp/video/v2.10/gimp-2-10-0-warp-transform.webm" type="video/webm">
+Your browser does not support the video tag.
+</video>
+</p>
+
+<p>As such, the new tool retires the old <em>iWarp</em> filter that was innovative at the
+time of its inception (and pre-dated Photoshop&#8217;s Liquify filter), but was
+ultimately cumbersome to use. The <em>Warp Transform</em> tool also features an
+<em>Eraser</em> mode to selectively remove changes, previously unavailable in the
+<em>iWarp</em>&nbsp;filter.</p>
+<p><strong>Contributors:</strong> Michael Muré, Michael Natterer, Jonathan&nbsp;Tait…</p>
+<h3 id="handle-transform">Handle Transform<a class="headerlink" href="#handle-transform" title="Permanent link">&para;</a></h3>
+<p>The new <em>Handle Transform</em> tool provides an interesting approach at applying
+scaling, rotating, and perspective correction using handles placed on the
+canvas. People who are used to editing on touch surfaces might find this tool
+strangely easy to&nbsp;grasp.</p>
+<p><strong>Contributors:</strong> Johannes Matschke, Michael Natterer,&nbsp;Ell…</p>
+<h3 id="blend-tool-becomes-gradient-tool-and-gets-on-canvas-editing">Blend tool becomes Gradient tool and gets on-canvas editing<a class="headerlink" href="#blend-tool-becomes-gradient-tool-and-gets-on-canvas-editing" title="Permanent link">&para;</a></h3>
+<p>We renamed the <em>Blend</em> tool to <em>Gradient</em> tool and changed its default shortcut
+to <strong>G</strong>. But this pales in comparison to what the tool can actually do now, and
+it&#8217;s a&nbsp;lot.</p>
+<p>The new tool pretty much obsoletes the old <em>Gradient Editor</em> dialog. Now you can
+create and delete color stops, select and shift them, assign colors to color
+stops, change blending and coloring for segments between color stops and create
+new color stops from midpoints <em>right on the canvas</em>.</p>
+<p>
+<video width="960" height="540" controls>
+  <source src="https://download.gimp.org/gimp/video/v2.9/gimp-2-9-8-gradient-edit.webm" type="video/webm">
+  <source src="https://download.gimp.org/gimp/video/v2.9/gimp-2-9-8-gradient-edit.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</p>
+
+<p>All gradients available by default are also &#8220;editable&#8221; now. What it means is
+that when you try to change an existing gradient from a system folder, <span class="caps">GIMP</span> will
+create a copy of it, call it a <em>Custom Gradient</em> and preserve it across
+sessions. Unless, of course, you edit another &#8216;system&#8217; gradient, in which case
+it will become the new custom&nbsp;gradient.</p>
+<p>We intend to use the generic implementation of this later for brushes and other
+types of&nbsp;resources.</p>
+<p><strong>Contributors:</strong> Michael Henning, Michael Natterer, Ell, Øyvind&nbsp;Kolås…</p>
+<h2 id="better-selection-tools">Better selection tools<a class="headerlink" href="#better-selection-tools" title="Permanent link">&para;</a></h2>
+<p>The <em>Foreground Select</em> tool can finally make subpixel selections in complex
+cases such as strays of hair on textured background. Two new masking methods are
+now available for&nbsp;that.</p>
+<figure>
+    <img src="images/2.10-foreground-select.jpg" alt="New foreground select" width="650" height="567">
+    <figcaption>
+    New foreground select tool using Matting Global for fine selections of foreground objects, particularly things like find hairs.
+    </figcaption>
+</figure>
+
+<p>The <em>Select by Color</em> and <em>Fuzzy Select</em> tools now both feature a <em>Draw mask</em>
+option to display future selection area with a magenta fill, and the latter tool
+also got a <em>Diagonal neighbors</em> option to select diagonally neighboring&nbsp;pixels.</p>
+<p>For the <em>Free Select</em> tool, closing a polygonal/free selection now doesn&#8217;t
+confirm the selection automatically. Instead you still can tweak positions of
+nodes (where applicable), then press <strong>Enter</strong>, double-click inside the
+selection, or switch to another tool to confirm the&nbsp;selection.</p>
+<p>The <em>Intelligent Scissors</em> tool finally allows to remove the last added segment
+with <strong>Backspace</strong> key, and <span class="caps">GIMP</span> now checks, whether the first and the last
+segments are distinct before closing the&nbsp;curve.</p>
+<p><strong>Contributors:</strong> Michael Natterer, Jan Rüegg, Daniel Sabo,&nbsp;Ell…</p>
+<h3 id="color-tools">Color tools<a class="headerlink" href="#color-tools" title="Permanent link">&para;</a></h3>
+<p>All color tools have been refactored to become <span class="caps">GEGL</span>-based filters, so they could
+be properly used later on when we introduce non-destructive editing. Hence,
+the <em>Color</em> submenu in the <em>Tools</em> menu has been removed, and these filters
+are now mostly unavailable in the&nbsp;toolbox.</p>
+<p><strong>Contributors:</strong> Michael&nbsp;Natterer…</p>
+<h2 id="text-tool-supports-cjk-and-more-writing-systems">Text tool supports <span class="caps">CJK</span> and more writing systems<a class="headerlink" href="#text-tool-supports-cjk-and-more-writing-systems" title="Permanent link">&para;</a></h2>
+<p>The <em>Text</em> tool now fully supports advanced input methods for <span class="caps">CJK</span> and other
+non-western languages. The pre-edit text is now displayed just as expected,
+depending on your platform and Input Method Engine. Several input method-related
+bugs and crashes have also been&nbsp;fixed.</p>
+<figure>
+    <img src="../news/2016/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-ime.png" alt="Input Method Engine support in text tool" width='417' height='240' />
+</figure>
+
+<p><strong>Contributors:</strong> Jehan&nbsp;Pagès…</p>
+<h3 id="experimental-tools">Experimental tools<a class="headerlink" href="#experimental-tools" title="Permanent link">&para;</a></h3>
+<p>Two new tools were incomplete for inclusion to <span class="caps">GIMP</span> 2.10 by default, but still
+can be enabled. Please note that they are highly experimental and likely to be
+broken for you (up to have <span class="caps">GIMP</span> crash). We only mention them, because we need
+contributors to get them into the releasable&nbsp;state.</p>
+<p><em>N-Point Deformation</em> tool introduces the kind of smooth, as little rigid as
+possible warping you would expect physical objects to&nbsp;have.</p>
+<iframe width="960" height="540" src="https://www.youtube.com/embed/OmOyQyuiO_E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p><em>Seamless Clone</em> tool is aimed to simplify making layered compositions.
+Typically when you paste one image into another, there are all sorts of
+mismatches: color temperature, brightness etc. This new experimental tool tries
+to adapt various properties of a pasted image with regards to its&nbsp;backdrop.</p>
+<p>To enable these tools, you need to first enable the <em>Playground</em> page of the
+<em>Preferences</em> dialog. Do it by running <span class="caps">GIMP</span> with a &#8216;&#8212;show-playground.&#8217; switch
+(for Windows, you might want tweaking the path to <span class="caps">GIMP</span> in the shortcut properties
+accordingly). Then you need to go to <em>Edit -&gt; Preferences -&gt; Playground</em> and
+enable the respective options, so that the tools would show up in the&nbsp;toolbox.</p>
+<p>We need to stress again that you should only do so either if you are very
+curious, or (which we hope for) intend to help us fix&nbsp;them.</p>
+<p><strong>Contributors:</strong> Marek Dvoroznak, Barak Itkin, Jehan Pagès, Michael&nbsp;Natterer…</p>
+<h2 id="digital-painting-improvements">Digital painting improvements<a class="headerlink" href="#digital-painting-improvements" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.10 ships with a number of improvements requested by digital painters. One
+of the most interesting new additions here is the <em>MyPaint Brush</em> tool that
+first appeared in the <span class="caps">GIMP</span>-Painter&nbsp;fork.</p>
+<p>The <em>Smudge</em> tool got updates specifically targeted in painting use case. The
+new <em>No erase effect</em> option prevents the tools from changing alpha of pixels.
+And the foreground color can now be blended into smudged pixels, controlled by
+a new <em>Flow</em> slider, where 0 means no&nbsp;blending.</p>
+<p>All painting tools now have explicit <em>Hardness</em> and <em>Force</em> sliders except for
+the <em>MyPaint Brush</em> tool that only has the <em>Hardness</em>&nbsp;slider.</p>
+<p>Most importantly, <span class="caps">GIMP</span> now supports canvas rotation and flipping to help
+illustrators checking proportions and&nbsp;perspective.</p>
+<figure>
+    <img src="../news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-lock-brush-to-view.jpg" alt="Lock brush to view demo" width='950' height='568' />
+</figure>
+
+<p>A new <em>Brush lock to view</em> option gives you a choice whether you want a brush
+locked to a certain zoom level and rotation angle of the canvas. The option is
+available for all painting tools that use a brush except for the <em>MyPaint Brush</em>&nbsp;tool.</p>
+<p>New <em>Symmetry Painting</em> dockable dialog, enabled on per-image basis, allows to
+use all painting tools with various symmetries (mirror, mandala,&nbsp;tiling…).</p>
+<figure>
+    <img src="../news/2016/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-symmetry.png" alt="Symmetry painting" width='975' height='1440' />
+</figure>
+
+<p>This new version of <span class="caps">GIMP</span> also ships with more new brushes available by&nbsp;default.</p>
+<p><strong>Contributors:</strong> Michael Natterer, Alexia Death, Daniel Sabo, shark0r, Jehan
+Pagès, Ell, Jose Americo Gobbo, Aryeom&nbsp;Han…</p>
+<h2 id="digital-photography-improvements">Digital photography improvements<a class="headerlink" href="#digital-photography-improvements" title="Permanent link">&para;</a></h2>
+<p>Some of the new <span class="caps">GEGL</span>-based filters are specifically targeted at photographers:
+<em>Exposure</em>, <em>Shadows-Highlights</em>, <em>High-pass</em>, <em>Wavelet Decompose</em>, <em>Panorama
+Projection</em> and others will be an important addition to your&nbsp;toolbox.</p>
+<figure>
+    <img src="../news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-shadows-highlights.jpg" alt="Shadows-Highlights" width='950' height='685' />
+    <figcaption>
+    <span class="caps">GEGL</span> Shadow-Highlights filter.
+    </figcaption>
+</figure>
+
+<figure>
+    <img src="../news/2018/04/17/gimp-2-10-0-rc2-released/gimp-2-10-rc-2-gegl-pano.jpg" width="979" height="791">
+    <figcaption>
+    <span class="caps">GEGL</span> panorama projection allows editing panorama images, <em>mapped</em>.
+    </figcaption>
+</figure>
+
+<p>On top of that, the new <em>Extract Component</em> filter simplifies extracting a
+channel of an arbitrary color model (<span class="caps">LAB</span>, <span class="caps">LCH</span>, <span class="caps">CMYK</span> etc.) from currently
+selected layer. If you were used to decomposing and recomposing images just for
+this, your work will be that easier&nbsp;now.</p>
+<p>Moreover, you can now use either <a href="https://www.darktable.org/" title="darktable.org">darktable</a> or <a href="https://www.rawtherapee.com/" title="RawTherapee">RawTherapee</a> as <span class="caps">GIMP</span> plug-ins for
+opening raw files. Any recent version of either application will&nbsp;do.</p>
+<p>A new <em>Clip Warning</em> display filter will visualize underexposed and overexposed
+areas of a photo for you, with customizable colors. For now, it’s mostly geared
+towards images where colors are stored with floating point precision. You will
+mostly benefit from this if you work on 16/32 bit per channel float images such
+as <span class="caps">EXR</span> and <span class="caps">TIFF</span>.</p>
+<p>
+<video width="960" height="540" controls>
+  <source src="https://download.gimp.org/gimp/video/v2.9/gimp-2-9-8-clipped-colors-warning.webm" type="video/webm">
+  <source src="https://download.gimp.org/gimp/video/v2.9/gimp-2-9-8-clipped-colors-warning.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</p>
+
+<p><strong>Contributors:</strong> Michael Natterer, Ell, Thomas Manni, Tobias Ellinghaus,
+Øyvind Kolås, Jehan Pagès, Alberto&nbsp;Griggio…</p>
+<h2 id="plug-ins">Plug-ins<a class="headerlink" href="#plug-ins" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> now ships with over <strong>80</strong> <span class="caps">GEGL</span>-based filters. A lot of those are former <span class="caps">GIMP</span> effects. Here is why <span class="caps">GEGL</span>-based implementations
+are&nbsp;better:</p>
+<ul>
+<li>You can apply them on images in 32-bit per color channel precision&nbsp;mode.</li>
+<li>You can preview them right on the canvas, and if an image is larger than the
+viewport, <span class="caps">GIMP</span> will render the viewport first for immediate&nbsp;feedback.</li>
+<li>You can use split preview to compare original image with its processed version
+and swap before/after sides both horizontally and&nbsp;vertically.</li>
+<li>In a future non-destructive <span class="caps">GIMP</span>, you will be able to adjust settings of those
+filters without undoing a ton of&nbsp;steps.</li>
+</ul>
+<figure>
+    <img src="../news/2016/2016-07-13%20GIMP%202.9.4%20Released/gimp-2-9-4-gegl-curtain.jpg" alt="GEGL preview curtain - original image by Aryeom Han" width='975' height='548' />
+</figure>
+
+<p>Some of the <span class="caps">GEGL</span>-based filters have OpenCL version for hardware acceleration.
+This will come in handy, if OpenCL drivers work well for you.
+Furthermore many operations can come multi-threaded to use your processor at
+their full&nbsp;power.</p>
+<h2 id="usability-improvements">Usability improvements<a class="headerlink" href="#usability-improvements" title="Permanent link">&para;</a></h2>
+<p>While working with active users, we got rid of quite a few usability issues.
+Here are just some of these&nbsp;changes:</p>
+<ul>
+<li>All transformation tools now automatically disable original layer
+view so that you could clearly see adjustments against the&nbsp;backdrop.</li>
+<li>Masks can now easily be created with last values you used by just pressing
+<strong>Shift</strong> and clicking on respective layer&#8217;s&nbsp;preview.</li>
+<li>All dialogs except the ones like <em>Scale</em> now remember last values you used
+across&nbsp;sessions.</li>
+<li>All <span class="caps">GEGL</span>-based filters allow saving named presets and automatically make
+timestamped presets for the last time you used&nbsp;them.</li>
+<li>You can now choose fill color or pattern for empty spaces after resizing the&nbsp;canvas.</li>
+</ul>
+<p>There is a lot to improve to make <span class="caps">GIMP</span> better suited for professional workflows.
+As usual, we welcome constructive discussion and recently created a
+<a href="https://mail.gnome.org/mailman/listinfo/gimp-gui-list">mailing list</a>
+to discuss the topic of improving <span class="caps">GIMP</span>&#8217;s usability. This is a long-term
+enhancement process, which can take more time than localized changes and&nbsp;features.</p>
+<h2 id="file-formats-support">File formats support<a class="headerlink" href="#file-formats-support" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> is now capable of reading and writing <span class="caps">TIFF</span>, <span class="caps">PNG</span>, <span class="caps">PSD</span>, and <span class="caps">FITS</span> files with
+up to 32-bit per channel precision where&nbsp;applicable.</p>
+<p>The <span class="caps">PSD</span> plug-in additionally supports pass-through, hard mix, pin light, vivid
+light, and linear light blending&nbsp;modes.</p>
+<p><span class="caps">GIMP</span> now also ships with native WebP support, including features like animation,
+<span class="caps">ICC</span> profiles, and metadata. Both importing and exporting are&nbsp;supported.</p>
+<p>The <span class="caps">JPEG</span> 2000 plug-in was rewritten to use the <em>OpenJPEG</em> library rather than
+the somewhat obsolete <em>Jasper</em>&nbsp;library.</p>
+<p>Finally, the <span class="caps">PDF</span> plug-in now supports importing password-protected files (you
+need to know the password) and exporting multipage <span class="caps">PDF</span> documents (each layer
+will be a&nbsp;page).</p>
+<p><strong>Contributors:</strong> Michael Natterer, Mukund Sivamaran, Ell, Jehan Pagès,
+Lionel N, Darshan&nbsp;Kadu…</p>
+<h2 id="metadata-viewing-editing-and-preservation">Metadata viewing, editing, and preservation<a class="headerlink" href="#metadata-viewing-editing-and-preservation" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> now ships with plug-ins for viewing and editing Exif, <span class="caps">XMP</span>, <span class="caps">IPTC</span>, <span class="caps">GPS</span>, and
+<span class="caps">DICOM</span> metadata. They are available via the <em>Image &gt; Metadata</em>&nbsp;submenu.</p>
+<figure>
+<img src="images/2.10-metadata-editor.png" alt="Metadata Editor" width="650" height="713" />
+</figure>
+
+<p><span class="caps">GIMP</span> will also preserve existing metadata in <span class="caps">TIFF</span>, <span class="caps">PNG</span>, <span class="caps">JPEG</span>, and WebP files.
+Each plug-in has respective options when exporting to enable or disable
+exporting the&nbsp;metadata.</p>
+<p>Additionally, users now can set defaults to preserving or not preserving
+metadata in all affected file format plug-ins at once depending on whether they
+want complete privacy or, instead, do a lot of microstock photography. The
+settings are available on the <em>Image Import <span class="amp">&amp;</span> Export</em> page in <em>Preferences</em>.</p>
+<p><strong>Contributors:</strong> Benoit Touchette, Michael Natterer, Jehan&nbsp;Pagès…</p>
+<h2 id="on-canvas-interaction">On-canvas interaction<a class="headerlink" href="#on-canvas-interaction" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.10 ships with a new feature that allows some <span class="caps">GEGL</span>-based filters to render
+on-canvas controls. For now, this applies to just three filters: <em>Spiral</em>,
+<em>Supernova</em>, and <em>Panorama Projection</em>. But there will be more in the&nbsp;future.</p>
+<p>
+<video width="960" height="576" controls>
+  <source src="https://download.gimp.org/gimp/video/v2.9/gimp-2-9-6-spiral-filter.webm" type="video/webm">
+  <source src="https://download.gimp.org/gimp/video/v2.9/gimp-2-9-6-spiral-filter.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</p>
+
+<p><strong>Contributors:</strong> Michael Natterer,&nbsp;Ell…</p>
+<h2 id="search-system">Search system<a class="headerlink" href="#search-system" title="Permanent link">&para;</a></h2>
+<p>As <span class="caps">GIMP</span> keeps growing and getting more features, it becomes increasingly
+difficult to locate this or that command in the user interface. This is
+especially true when you are a new user who has yet to master image editing,
+or an experienced user who is accustomed to a different&nbsp;application.</p>
+<p><span class="caps">GIMP</span> 2.10 comes with a search system that allows easily locating a command available in <span class="caps">GIMP</span>&#8217;s menu. Press the slash key (<strong>/</strong>), type a keyword,
+and choose the command that looks most&nbsp;applicable.</p>
+<p><strong>Contributors:</strong> Srihari Sriraman, Jehan&nbsp;Pagès…</p>
+<h3 id="simplified-bug-reporting-and-crash-recovery">Simplified bug reporting and crash recovery<a class="headerlink" href="#simplified-bug-reporting-and-crash-recovery" title="Permanent link">&para;</a></h3>
+<p>We need good bug reports to make <span class="caps">GIMP</span> better for you, so we introduced a new
+feature to watch and intercept critical errors and crashes, then generate a
+useful error log that you can copy/paste to a bug&nbsp;report.</p>
+<figure>
+    <img src="../news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-bug-reporting.jpg" alt="Debug dialog to simplify bug reporting" width='914' height='662' />
+</figure>
+
+<p>On development versions, the dialog will be raised on all kind of errors (even
+minor ones). On stable releases, it will be raised only during crashes. The
+default behavior can be customized in <em>Edit &gt; Preferences &gt; Debugging</em>.</p>
+<p>Please note that we still need you to provide context, e.g. what you were doing
+when a crash occurred. A step-by-step description of how to reproduce this bug
+will be most&nbsp;helpful.</p>
+<p>Additionally, in case of a crash, <span class="caps">GIMP</span> will now attempt to backup all images
+with unsaved changes, then suggest to reopen them the next time you start the&nbsp;application.</p>
+<figure>
+    <img src="../news/2018/03/26/gimp-2-10-0-rc1-released/gimp-2-10-rc1-crash-recovery.jpg" alt="Crash recovery dialog" width='914' height='507' />
+</figure>
+
+<p>We cannot guarantee 100% success, but it will succeed sometimes, and this might
+rescue your unsaved&nbsp;work!</p>
+<p><strong>Contributors</strong>: Jehan&nbsp;Pagès…</p>
+<h2 id="api-changes"><span class="caps">API</span> changes<a class="headerlink" href="#api-changes" title="Permanent link">&para;</a></h2>
+<p>Over the course of this development cycle, we deprecated a lot of <span class="caps">API</span>, providing
+a compatibility layer for 3rd party developers who write scripts and&nbsp;plug-ins.</p>
+<p>For the full list of changes in <span class="caps">PDB</span>, please <a href="https://wiki.gimp.org/wiki/Release:2.10_changelog#API_Changes">see the
+wiki</a>.
+This ChangeLog page also has a verbose list of all other changes in&nbsp;2.10.</p>
+<h2 id="roadmap-and-whats-next">Roadmap and what&#8217;s next<a class="headerlink" href="#roadmap-and-whats-next" title="Permanent link">&para;</a></h2>
+<p>We maintain a <a href="https://developer.gimp.org/core/roadmap/">roadmap for <span class="caps">GIMP</span> development</a>
+that outlines the order of features to be implemented based on&nbsp;priorities.</p>
+<p>The next big update will be v3.0 that will feature <span class="caps">GTK</span>+3 port and a lot of
+internal changes. For users, this will mostly mean: updated user interface,
+better support for graphic tablets, better support for HiDPI displays, better
+support for Wayland on&nbsp;Linux.</p>
+<p>We are also opening the 2.10.x series for new features. This means you don&#8217;t
+have to wait for exciting improvements for years anymore: any new feature can
+indeed be backported to a 2.10.x release as long as its code is not too invasive
+and making maintenance&nbsp;difficult.</p>
+<p>All the new features from 2.10.x will be part of 3.0 as&nbsp;well.</p>
+<h2 id="download-and-install-pre-made-packages">Download and install pre-made packages<a class="headerlink" href="#download-and-install-pre-made-packages" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> can be downloaded directly from our <a href="../downloads/index.html">Downloads</a> section.
+As usual, we will have Windows installers and macOS packages readily
+available. We now also provide a Flatpak repository for&nbsp;Linux.</p>
+<p>Please be very cautious when downloading from anywhere else — some sites use
+<span class="caps">GIMP</span>&#8217;s popularity to lure unwary users into their traps by shipping modified
+installer&nbsp;packages.</p>
+<h2 id="bugs">Bugs<a class="headerlink" href="#bugs" title="Permanent link">&para;</a></h2>
+<p>If you think you found a bug in <span class="caps">GIMP</span>, please make sure that it hasn&#8217;t been
+already reported. Search <a href="https://gitlab.gnome.org/GNOME/gimp/issues">the bug tracker</a> before filing a
+<a href="https://gitlab.gnome.org/GNOME/gimp/issues/new?issue%5Bassignee_id%5D=&amp;issue%5Bmilestone_id%5D=">new bug-report</a>.
+Here are some interesting Bugzilla&nbsp;queries:</p>
+<ul>
+<li><a href="https://gitlab.gnome.org/GNOME/gimp/issues?milestone_title=2.10">Open bugs with milestone&nbsp;2.10</a></li>
+<li><a href="https://gitlab.gnome.org/GNOME/gimp/issues?milestone_title=2.10&amp;state=closed">Resolved bugs with milestone&nbsp;2.10</a></li>
+</ul>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>We need your help to make <span class="caps">GIMP</span> 2.10 a success. If you want to join us hacking,
+show up on <a href="../discuss.html"><span class="caps">IRC</span></a> in #gimp (on <em>irc.gimp.org</em>
+server) or introduce yourself on the <a href="https://mail.gnome.org/mailman/listinfo/gimp-developer-list">gimp-developer
+mailing-list</a>.</p>
+<p>We are also looking for people to look after the website and update the
+<a href="../tutorials/index.html">tutorials</a>.
+Or you might want to join the <a href="https://docs.gimp.org/">documentation team</a>
+or the <a href="https://wiki.gnome.org/TranslationProject">translation team</a> for
+your&nbsp;language.</p>
+<h2 id="supporting">Supporting<a class="headerlink" href="#supporting" title="Permanent link">&para;</a></h2>
+<p>Currently there are crowdfunding efforts underway for both Jehan Pagès and
+Øyvind&nbsp;Kolås.</p>
+<p>This is a wonderful way to help supporting core developers directly with their
+efforts and to help move great new features forward. Consider supporting Jehan
+(<a href="https://www.patreon.com/zemarmot" title="ZeMarmot Patreon">Patreon</a>, <a href="https://liberapay.com/ZeMarmot" title="ZeMarmot Liberapay">Liberapay</a>) and Øyvind (<a href="https://www.patreon.com/pippin" title="Pippin Patreon">Patreon</a>,
+<a href="https://liberapay.com/pippin" title="Pippin Liberapay">Liberapay</a>) and help keep the bugfixes and improvements&nbsp;coming!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="../docs/index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='../docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../bugs/index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.10.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:51:01 GMT -->
+</html>

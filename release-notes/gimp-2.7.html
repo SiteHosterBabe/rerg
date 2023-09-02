@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.7.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - GIMP 2.7 Release Notes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='gimp-2.7.html' />
+        <meta itemprop='name' content='GIMP - GIMP 2.7 Release Notes' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='gimp-2.7.html' />
+        <meta property='og:title' content='GIMP - GIMP 2.7 Release Notes' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Pat David' />
+        <meta property='og:author' content='Pat David' />
+
+        <meta itemprop='description' content="This is an unstable development version of the GNU Image Manipulation Program. Please realize that this is just a snapshot of the development tree. We are working hard towards GIMP 2.8, the next stable release. GIMP 2.7 is in no way a final product. A lot of new …" />
+        <meta property='og:description' content="This is an unstable development version of the GNU Image Manipulation Program. Please realize that this is just a snapshot of the development tree. We are working hard towards GIMP 2.8, the next stable release. GIMP 2.7 is in no way a final product. A lot of new …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="../docs/index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="../docs/index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1><span class="caps">GIMP</span> 2.7 Release&nbsp;Notes</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <p>This is an unstable development version of the <strong><span class="caps">GNU</span> Image Manipulation Program</strong>. Please realize that this is just a snapshot of the development tree. We are working hard towards <span class="caps">GIMP</span> 2.8, the next stable release. <span class="caps">GIMP</span> 2.7 is in no way a final product. A lot of new features are incomplete and some things may even be completely broken. If you need to get work done, please use the stable version, <span class="caps">GIMP</span>&nbsp;2.6.</p>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.7 is the result of three years of hard work and collaborative development. This version of <span class="caps">GIMP</span> is equipped with a wealth of new features, including some highly requested ones. Keep reading to find out exactly what <span class="caps">GIMP</span> 2.7 has to offer you in areas such as the user interface, tools, and&nbsp;plug-ins.</p>
+<h2 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Permanent link">&para;</a></h2>
+<h3 id="single-window-mode">Single-Window Mode<a class="headerlink" href="#single-window-mode" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-single-window-mode.png" alt="Single-window mode screenshot" width="300" height="200" />
+</figure>
+
+<p><span class="caps">GIMP</span> 2.7 introduces an optional single-window mode. You can toggle between the default multi-window mode and the new single-window mode through the <em>Single-window mode</em> checkbox in the <em>Windows</em> menu. In single-window mode, <span class="caps">GIMP</span> will put dockable dialogs and images in a single, tabbed image window. The single-window mode setting is of course preserved if you quit and start <span class="caps">GIMP</span> again. Single-window mode removes the necessity for users of having to deal with multiple windows.
+<strong>Developers:</strong> Martin Nordholts, Michael Natterer
+<strong>Interaction Architect:</strong> Peter&nbsp;Sikking</p>
+<h3 id="multi-column-dock-windows">Multi-Column Dock Windows<a class="headerlink" href="#multi-column-dock-windows" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-multi-column-dock-windows.png" alt="Multi-column dock windows screenshot" />
+</figure>
+
+<p><span class="caps">GIMP</span> 2.7 allows dockable dialogs in a dock window to be placed in multiple columns. To create a new column in a dock window, drag and drop a dockable dialog on the vertical edges of the dock window. This is an appealing feature for multi-monitor users where one screen can have a big dock window with all the dialogs and the tools, while all images are on other displays.
+<strong>Developer:</strong> Martin Nordholts
+<strong>Interaction Architect:</strong> Peter&nbsp;Sikking</p>
+<h3 id="more-screen-real-estate-for-dockable-dialogs">More Screen Real Estate For Dockable Dialogs<a class="headerlink" href="#more-screen-real-estate-for-dockable-dialogs" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-removed-docking-bars.png" alt="Removed docking bars screenshot" />
+</figure>
+
+<p>The docking bars have been removed and replaced with overlaid highlights. The dockable drag handle has been removed and the dockable menu button has been moved up to the tabs. A new Automatic tab style has been added which makes dockable tabs use the available space.
+<strong>Developer:</strong> Martin&nbsp;Nordholts</p>
+<h3 id="save-and-export">Save And Export<a class="headerlink" href="#save-and-export" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-save-and-export.png" alt="Save and export screenshot" />
+</figure>
+
+<p>A rather big conceptual change is that saving and exporting images now are clearly separated activities. Saving an image can only be done in the <span class="caps">XCF</span> format which is <span class="caps">GIMP</span>&#8217;s native file format, able to save all kinds of information necessary for works in&nbsp;progress.</p>
+<p>To export into other formats <em>File-&gt;Export&#8230;</em> needs to be used. This distinction makes it clearer if all available information is stored in a file, or not. There are some optimizations for alternative workflows such as opening a jpg, polishing it, and quickly exporting back to the original file. This conceptual change has also allowed us to get rid of the annoying dialogs that warned about the flatting of images when saving to non-layered formats.
+<strong>Developer:</strong> Martin Nordholts
+<strong>Interaction Architect:</strong> Peter&nbsp;Sikking</p>
+<h3 id="layer-groups">Layer Groups<a class="headerlink" href="#layer-groups" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-layer-groups.png" alt="Layer groups screenshot" />
+</figure>
+
+<p>For complex compositions, a flat layer structure is very limiting. <span class="caps">GIMP</span> 2.7 lets users organize their compositions better through the introduction of layer groups which allow layers to be organized in tree-like structures. Layer groups are fully scriptable through the <span class="caps">GIMP</span> plug-in <span class="caps">API</span>.
+<strong>Developer:</strong> Michael&nbsp;Natterer</p>
+<h3 id="tools-drawn-with-cairo">Tools Drawn With Cairo<a class="headerlink" href="#tools-drawn-with-cairo" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-tools-drawn-with-cairo.png" alt="Tools drawn with cairo screenshot" />
+</figure>
+
+<p>All tools rendering on canvas have been ported to Cairo to provide smooth antialiased graphics and make <span class="caps">GIMP</span>&#8217;s look and feel match modern users expectations. All but a few plug-ins have been ported over to Cairo as well. Additionally all tools now use an on-canvas progress indicator instead of the one in the statusbar.
+<strong>Developer:</strong> Michael&nbsp;Natterer</p>
+<h3 id="on-canvas-text-editing">On-Canvas Text Editing<a class="headerlink" href="#on-canvas-text-editing" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-on-canvas-text-editing.png" alt="On-canvas text editing screenshot" />
+</figure>
+
+<p>Text editing with the Text Tool is now performed on-canvas instead of in a separate window. The editing on-canvas is rather sophisticated: apart from the usual text formatting features like font family, style and size selectors you get numeric control over baseline offset and kerning, as well as the ability to change text color for a selection. You can also use a combination of Alt and arrow keys to change baseline offset and kerning. This feature was originally developed during Google Summer of Code 2008 and heavily improved since.
+<strong>Developers:</strong> Daniel Eddeland, Michael&nbsp;Natterer</p>
+<h3 id="keyboard-shortcut-changes">Keyboard Shortcut Changes<a class="headerlink" href="#keyboard-shortcut-changes" title="Permanent link">&para;</a></h3>
+<p>Since the keyboard shortcuts Ctrl+E and Ctrl+Shift+E have been repurposed for the image export mechanisms, new keyboard shortcuts have been setup for &#8216;Shrink Wrap&#8217; and &#8216;Fit in Window&#8217;, namely Ctrl+J and Ctrl+Shift+J respectively.
+<strong>Developer:</strong> Martin&nbsp;Nordholts</p>
+<h3 id="simple-math-in-size-entries">Simple Math In Size Entries<a class="headerlink" href="#simple-math-in-size-entries" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-math-in-size-entries.png" alt="Math in size entries screenshot" />
+</figure>
+
+<p>Enhancements have also been made to the size entry widget, which is used for inputting most of the x, y, width, height parameters. For example, in the scale dialog it is now possible to write &#8216;50%&#8217; in the Width field to scale the image to 50% of the width. Expressions such as &#8216;30in + 40px&#8217; and &#8216;4 * 5.4in&#8217; work, too.
+<strong>Developer:</strong> Fredrik&nbsp;Alströmer</p>
+<h3 id="minor-changes">Minor Changes<a class="headerlink" href="#minor-changes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Added &#8216;Windows→Hide docks&#8217; menu item that does what &#8216;Tab&#8217; does and also displays its state, which is now persistent across sessions,&nbsp;too.</li>
+<li>Added infrastructure allowing to embed user interface elements on the canvas. This is currently used for text styles in the text tool, and (experimentally) when a color correction tool is invoked while the canvas is in full-screen&nbsp;mode.</li>
+<li>To make dock window titles manageable, only show the active dockable in the dock window&nbsp;title.</li>
+<li>The layer modes have been rearranged into more logical and useful groups based on the effect they have on compositing of a layer. Layer modes that make the composite lighter are in one group, layer modes that make the composite darker in another group, and so&nbsp;forth.</li>
+<li>You can now Alt+Click on layers in the Layers dialog to create a selection from it. Add, subtract and intersect modifiers Ctrl, Shift and Ctrl+Shift keys work too. This makes it easy to compose contents of a layer based on the contents of other layers, without&nbsp;detours.</li>
+<li>New docks are created at the pointer&nbsp;position.</li>
+<li>Removed Toolbox from list of Recently Closed Docks, handle that directly in the Windows&nbsp;menu.</li>
+<li>Allow closing the toolbox without closing the whole&nbsp;application.</li>
+<li>Default to non-fixed-aspect in Canvas Size&nbsp;dialog.</li>
+<li>In the Preferences dialog, only have one setting for the window hint for both the toolbox and the&nbsp;docks.</li>
+<li>Support arbitrary affine transforms of&nbsp;brushes.</li>
+<li>Got rid of the Tools dockable and move toolbox configuration to&nbsp;Preferences.</li>
+<li>A question that often arises is how to change the <span class="caps">UI</span> language in <span class="caps">GIMP</span>, which has traditionally been a bit cumbersome. Not any longer, it is now possible to change the language in&nbsp;Preferences.</li>
+<li>Added &#8216;Lock content&#8217; button to the layers, channels and paths dialogs, made the lock buttons more&nbsp;compact.</li>
+<li>Allow renaming list items with&nbsp;F2.</li>
+<li>Allow binding arbitrary actions to extra mouse&nbsp;buttons.</li>
+</ul>
+<p><strong>Developers:</strong> Michael Natterer, Martin Nordholts, Alexander Jones, Alexia Death, Sven&nbsp;Neumann</p>
+<h2 id="tools-plug-ins">Tools <span class="amp">&amp;</span> Plug-ins<a class="headerlink" href="#tools-plug-ins" title="Permanent link">&para;</a></h2>
+<h3 id="brush-system-improvements">Brush System Improvements<a class="headerlink" href="#brush-system-improvements" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-brush-system-improvements.png" alt="Brush system improvements screenshot" />
+</figure>
+
+<p>The brush dynamics engine has been expanded considerably, making almost all aspects of the brush engine drivable by a multitude of inputs, all of them configurable with their own response&nbsp;curve.</p>
+<p>Because of the expansion, dynamics were separated from tool options and converted into a resource in their own right. The Google Summer of Code 2009 Advanced <span class="caps">GUI</span> for Brush Dynamics project was the start of its development.
+<strong>Developers:</strong> Alexia Death, Michael Natterer, Zhenfeng&nbsp;Zhao</p>
+<h3 id="tool-preset-improvements">Tool Preset Improvements<a class="headerlink" href="#tool-preset-improvements" title="Permanent link">&para;</a></h3>
+<p>You can now save existing state of any tool as a preset and give it a meaningful name. The presets are accessible from a new Tool Presets dockable dialog and additionally can be tagged so that you can easily manage a lot of&nbsp;presets.</p>
+<p>This new feature completely replaces the previously existing tool presets system to a new level of accessibility. It also makes it possible to distribute tool presets just like any other resource because each preset is saved as an individual file.
+<strong>Developers:</strong> Michael Natterer, Alexia&nbsp;Death</p>
+<h3 id="cage-transform-tool">Cage Transform Tool<a class="headerlink" href="#cage-transform-tool" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-cage-transform-tool.png" alt="Cage transform tool screenshot" />
+</figure>
+
+<p>A completely new <em>Cage transform</em> tool has been added thanks to the excellent work of one of our Google Summer of Code 2010 students. The tool implements an innovative approach to free transformation and makes it possible to easily warp parts of objects using an adjustable user-defined polygonal frame.
+<strong>Developer:</strong> Michael&nbsp;Muré</p>
+<h3 id="file-plug-ins">File Plug-Ins<a class="headerlink" href="#file-plug-ins" title="Permanent link">&para;</a></h3>
+<p>A plug-in for loading <span class="caps">JPEG2000</span> images has been added, as well as plug-ins for X11 Mouse Cursor files and fundamental OpenRaster (.ora) import and export support. Added <span class="caps">RGB565</span> support to the csource plug-in.
+<strong>Developers:</strong> Aurimas Juška, Takeshi&nbsp;Matsuyama</p>
+<p>A Cairo based <span class="caps">PDF</span> exporter was implemented. While being somewhat simplistic the exporter saves text, embedding fonts into the final <span class="caps">PDF</span> file, and attempts to convert all flat filled areas to vector objects.
+<strong>Developer:</strong> Barak&nbsp;Itkin</p>
+<p>Last, but not least, a Web-page plug-in was added to render any web page into an image using Webkit.
+<strong>Developer:</strong> Mukund&nbsp;Sivaraman</p>
+<h3 id="for-tablet-users">For Tablet Users<a class="headerlink" href="#for-tablet-users" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-for-stylus-users.png" alt="For stylus users screenshot" />
+</figure>
+
+<p>A new experimental widget was added to meet the requirements of graphic tablets users. The widget combines a slider, a label and a numeric value control which simplifies adjusting a value using a stylus, better visualizes the current value and provides a more compact <span class="caps">UI</span>. It is now used in the Tools Options dockable dialog for opacity control and most options of brush based&nbsp;tools.</p>
+<p>Another useful feature for users of advanced input devices such as graphic tablets is a completely new dialog for input device configuration which allows configuring per-device pressure curves to compensate for hardware differences and personal per-pen&nbsp;preferences.</p>
+<p>People with Intuos tablets and either Artpen or Airbrush styluses will be glad to find that Airbrush wheel and Artpen rotation are available for driving dynamics via the &#8216;Wheel&#8217; input.
+<strong>Developers:</strong> Michael Natterer, Alexia&nbsp;Death</p>
+<h3 id="resource-tagging">Resource Tagging<a class="headerlink" href="#resource-tagging" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.8-resource-tagging-brushes.png" alt="Resource tagging screenshot with brushes" />
+</figure>
+
+<p>It is now possible to tag <span class="caps">GIMP</span> resources such as brushes and patterns to group them. The tagging is performed from the respective dockables e.g. the <em>Brushes</em> dockable, and it is possible to filter resources based on these&nbsp;tags.</p>
+<p>The tags are saved to an <span class="caps">XML</span> file, external to the data files themselves. It is possible to tag multiple resources simultaneously in the <span class="caps">UI</span>, but currently only while being viewed as a list. This feature was developed during Google Summer of Code 2008.
+<strong>Developer:</strong> Aurimas Juška
+<strong>Interaction Architect:</strong> Peter&nbsp;Sikking</p>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<p>We have started overhauling the default set of resources and in this version there have been some changes to the default set of brushes. The silly &#8216;Untitled&#8217; title has been removed from unnamed palette entries. A wholly new set of brushes for painting has been added and makes use of the new tagging system.
+<strong>Developer:</strong> Martin Nordholts
+<strong>Artists:</strong> Johannes Engelhardt, Ramón Miranda, Guillermo&nbsp;Espertino</p>
+<h3 id="minor-changes_1">Minor Changes<a class="headerlink" href="#minor-changes_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Allow specifying the written language in the Text Tool. This helps with choosing an appropriate font, or appropriate glyphs for the selected&nbsp;language.</li>
+<li>Moved &#8216;Text along path&#8217; from tool options to the text context&nbsp;menu.</li>
+<li>Add diagonal guides to the Crop&nbsp;Tool.</li>
+<li>Support rotating&nbsp;brushes.</li>
+<li>The Smooth Stroke feature from <span class="caps">GIMP</span> Painter was ported to <span class="caps">GIMP</span>.</li>
+<li>Added &#8216;Rule of fifths&#8217; crop guide&nbsp;overlay.</li>
+<li>Added an icon for the Desaturate&nbsp;tool.</li>
+<li>Support loading 16bit (<span class="caps">RGB565</span>) raw&nbsp;data.</li>
+<li>Added palette exporter for <span class="caps">CSS</span>, <span class="caps">PHP</span>, Python, txt and Java, accessed through the palette context&nbsp;menu.</li>
+<li>Support printing crop marks for&nbsp;images.</li>
+<li>Made the Pointer dockable show information about selection position and&nbsp;size.</li>
+<li>Replaced the brush scale control in tool options by a brush size one that works in pixels, and does the right thing when the brush&nbsp;changes.</li>
+<li>Improved the Free Select Tool on-canvas&nbsp;feedback.</li>
+<li>Made it possible to use <span class="caps">GEGL</span> for scaling&nbsp;images.</li>
+</ul>
+<p><strong>Developers:</strong> Sven Neumann, Michael Natterer, Tim Jedlicka, Alexia Death, Nelson A. de Oliveira, Jakub Steiner, Nicholas Doyle, Barak Itkin, Martin&nbsp;Nordholts</p>
+<h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h2>
+<h3 id="plug-in-development">Plug-in Development<a class="headerlink" href="#plug-in-development" title="Permanent link">&para;</a></h3>
+<p><span class="caps">GIMP</span> 2.8 also further enhances its scripting abilities. For example, <span class="caps">API</span> changes to support layer groups have been made. Here is a <a href="https://developer.gimp.org/api/2.0/libgimp/libgimp-index-new-in-2-8.html">list of new symbols in <span class="caps">GIMP</span> 2.8</a>.</p>
+<h3 id="api-changes"><span class="caps">API</span> Changes<a class="headerlink" href="#api-changes" title="Permanent link">&para;</a></h3>
+<p>A lot of <span class="caps">GIMP</span> APIs have been refactored to simplify developing new&nbsp;scripts.</p>
+<h3 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h3>
+<p>The <span class="caps">GIMP</span> license has been changed to&nbsp;(L)GPLv3+.</p>
+<h3 id="gegl"><span class="caps">GEGL</span><a class="headerlink" href="#gegl" title="Permanent link">&para;</a></h3>
+<p>The projection code which composes a single image from layers has been ported to <span class="caps">GEGL</span>. This includes the layer modes, as well as support for layer groups. Also, preparations have been made for better and more intuitive handling of the floating selection. <strong>Developers:</strong> Michael Natterer, Martin&nbsp;Nordholts</p>
+<h3 id="roadmap">Roadmap<a class="headerlink" href="#roadmap" title="Permanent link">&para;</a></h3>
+<p>The <span class="caps">GIMP</span> developers now maintain a roadmap for <span class="caps">GIMP</span> development found here: <a href="https://developer.gimp.org/core/roadmap/">https://developer.gimp.org/core/roadmap/</a></p>
+<h2 id="gimp-27-screenshots"><span class="caps">GIMP</span> 2.7 Screenshots<a class="headerlink" href="#gimp-27-screenshots" title="Permanent link">&para;</a></h2>
+<figure>
+<img src="../screenshots/1280x800-fresh-start.jpg" alt="First GIMP 2.8 startup" />
+<figcaption>
+First startup of <span class="caps">GIMP</span> 2.8 on a 1280x800 desktop.
+</figcaption>
+</figure>
+
+</div>
+<h2 id="known-regressions">Known Regressions<a class="headerlink" href="#known-regressions" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.8 relies on a newer version of <span class="caps">GTK</span>+2 that unfortunately has partially broken support for graphics tablets such as Wacom. If your graphic tablet doesn&#8217;t work in <span class="caps">GIMP</span> 2.8 as it should, we recommend downgrading to 2.6 until we release <span class="caps">GIMP</span> 3.0 that relies on <span class="caps">GTK</span>+3 which has fully functional support for advanced input&nbsp;devices.</p>
+<p>To address the needs to migrate from the old tools presets system to the new one we provide a <a href="https://wiki.gimp.org/index.php/Mindstorm:Preset_converter">script</a> in Python. However, the old tools presets are not 100% convertible to the new tool presets. For instance, brush scale from 2.6 can&#8217;t be converted to brush size in&nbsp;2.8.</p>
+<h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
+<p>The development snapshots of <span class="caps">GIMP</span> can be downloaded as source code from ftp.gimp.org or from one of the mirrors listed in the <a href="../downloads/index.html#mirrors">Downloads</a>&nbsp;section.</p>
+<p>Distribution of binary packages of the development version is discouraged unless it is made clear that this is an early development snapshot. Users should be referred to these release notes or similar&nbsp;information.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.7 must <strong>not</strong> be installed in the same prefix as other <span class="caps">GIMP</span> 2.x versions. If you want to keep your <span class="caps">GIMP</span> 2.6 installation in parallel to <span class="caps">GIMP</span> 2.7, you have to choose a separate installation prefix at compile-time and ensure that you use different library search paths for each version. If you do not set up your environment differently for each version, you will experience conflicts with the libraries and at least one version is likely to&nbsp;fail.</p>
+<p>Also, do <strong>not</strong> install <span class="caps">GIMP</span> 2.7 to /usr/local because on most systems, its libraries would override the libraries of a stable <span class="caps">GIMP</span> 2.6 installed into /usr, breaking your distribution-installed <span class="caps">GIMP</span> from slightly to completely. The same applies to any prefix your system uses for the purpose or overriding things in&nbsp;/usr/lib.</p>
+<p>You install the new version into a separate prefix, say /opt/gimp-2.7 by passing <code>--prefix=/opt/gimp-2.7</code> to the configure script. Then, in order to run the binary installed there, you change your environment to look for executables in /opt/gimp-2.7/bin by setting <code>PATH=/opt/gimp-2.7/bin</code> and you tell your linker to pick up libraries from /opt/gimp-2.7/lib by setting <code>LD_LIBRARY_PATH=/opt/gimp-2.7/lib</code>. Do not forget to <code>export</code> both&nbsp;variables.</p>
+<p>You can use a tiny wrapper script called gimp-2.7 and place it into /usr/local/bin or elsewhere in your <span class="caps">PATH</span>. The script would look something like&nbsp;this:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/sh</span>
+
+<span class="nv">PATH</span><span class="o">=</span>/opt/gimp-2.7/bin:<span class="nv">$PATH</span>
+<span class="nb">export</span><span class="w"> </span>PATH
+<span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/opt/gimp-2.7/lib
+<span class="nb">export</span><span class="w"> </span>LD_LIBRARY_PATH
+
+/opt/gimp-2.7/bin/gimp-2.7<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+</code></pre></div></td></tr></table></div>
+
+<h2 id="bugs">Bugs<a class="headerlink" href="#bugs" title="Permanent link">&para;</a></h2>
+<p>If you think you found a bug in a development version, please make sure that it hasn&#8217;t been already reported. Search <a href="https://bugzilla.gnome.org/">Bugzilla</a> before filing a new bug-report. Here are some interesting Bugzilla&nbsp;queries:</p>
+<ul>
+<li><a href="https://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.8&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">Open bugs with milestone&nbsp;2.8</a></li>
+<li><a href="https://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.8&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED">Resolved bugs with milestone&nbsp;2.8</a></li>
+</ul>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>We need your help to make <span class="caps">GIMP</span> 2.8 a success. If you want to join us hacking, show up in #gimp or introduce yourself on the gimp-developer mailing-list. We are also looking for people to look after the web-site and update the tutorials. Or you might want to join the <a href="https://docs.gimp.org/">documentation team</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="../docs/index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='../docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../bugs/index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.7.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:48 GMT -->
+</html>

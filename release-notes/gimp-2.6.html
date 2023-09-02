@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.6.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - GIMP 2.6 Release Notes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='gimp-2.6.html' />
+        <meta itemprop='name' content='GIMP - GIMP 2.6 Release Notes' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='gimp-2.6.html' />
+        <meta property='og:title' content='GIMP - GIMP 2.6 Release Notes' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Pat David' />
+        <meta property='og:author' content='Pat David' />
+
+        <meta itemprop='description' content="Introduction¶ GIMP 2.6 is an important release from a development point of view. It features changes to the user interface addressing some often received complaints, and a tentative integration of GEGL, the graph based image processing library that will eventually bring high bit-depth and non-destructive editing to GIMP. User …" />
+        <meta property='og:description' content="Introduction¶ GIMP 2.6 is an important release from a development point of view. It features changes to the user interface addressing some often received complaints, and a tentative integration of GEGL, the graph based image processing library that will eventually bring high bit-depth and non-destructive editing to GIMP. User …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="../docs/index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="../docs/index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1><span class="caps">GIMP</span> 2.6 Release&nbsp;Notes</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.6 is an important release from a development point of view. It features changes to the user interface addressing some often received complaints, and a tentative integration of <span class="caps">GEGL</span>, the graph based image processing library that will eventually bring high bit-depth and non-destructive editing to <span class="caps">GIMP</span>.</p>
+<h2 id="user-interface">User Interface<a class="headerlink" href="#user-interface" title="Permanent link">&para;</a></h2>
+<h3 id="toolbox-menubar-removed">Toolbox Menubar Removed<a class="headerlink" href="#toolbox-menubar-removed" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.6-empty-image-window.png" alt="Empty Image Window screenshot"/>
+</figure>
+
+<p>The toolbox menubar has been removed and merged with the image window menubar. To be able to do this a window called the <em>empty image window</em> has been introduced. It hosts the menubar and keeps the application instance alive when no images are opened. It also acts as a drag and drop target. When opening the first image the empty image window is transformed into a normal image window, and when closing the last image, that window becomes the empty image&nbsp;window.</p>
+<h3 id="toolbox-and-docks-are-utility-windows">Toolbox and Docks are Utility windows<a class="headerlink" href="#toolbox-and-docks-are-utility-windows" title="Permanent link">&para;</a></h3>
+<p>With the empty image window acting as a natural main window, the default window hints for the Toolbox and Docks have been changed to <em>Utility window</em>. This enables window managers to do a much better job of managing the <span class="caps">GIMP</span> windows, including omitting the Toolbox and Docks from the taskbar and ensuring that the Toolbox and Docks always are above image&nbsp;windows.</p>
+<h3 id="ability-to-pan-beyond-image-border">Ability to Pan Beyond Image Border<a class="headerlink" href="#ability-to-pan-beyond-image-border" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.6-scroll-beyond-border.png" alt="Scroll Beyond Border illustration"/>
+</figure>
+
+<p>It is now possible to pan beyond the image border, making image window navigation much less constrained. It is no longer a problem to use the edge of a brush on the edge of an image while being zoomed in, and one can adapt the canvas to any utility windows covering parts of the image&nbsp;window.</p>
+<h3 id="minor-changes">Minor Changes<a class="headerlink" href="#minor-changes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Renamed Dialogs menu to&nbsp;Windows.</li>
+<li>Keep a list of recently closed Docks and allow reopening&nbsp;them.</li>
+<li>Make opening images in already running <span class="caps">GIMP</span> instances work better on&nbsp;Windows.</li>
+<li>You can now enter the image zoom ratio directly in the status&nbsp;bar.</li>
+<li>Added support for using online help instead of a locally installed <span class="caps">GIMP</span> Help&nbsp;package.</li>
+<li>Make it possible to lock tabs in docks to prevent accidental&nbsp;moving.</li>
+</ul>
+<h2 id="tools-filters-plug-ins">Tools, Filters <span class="amp">&amp;</span> Plug-ins<a class="headerlink" href="#tools-filters-plug-ins" title="Permanent link">&para;</a></h2>
+<h3 id="improved-free-select-tool">Improved Free Select Tool<a class="headerlink" href="#improved-free-select-tool" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.6-new-free-select-tool.png" alt="New Free Select Tool in action"/>
+</figure>
+
+<p>The freehand select tool has been enhanced to support polygonal selections. It also allows mixing free hand segments with polygonal segments, editing of existing segments, applying angle-constraints to segments, and of course the normal selection tool operations like add and subtract. Altoghether this ends up making the Free Select Tool a very versatile, powerful and easy-to-use selection&nbsp;tool.</p>
+<h3 id="brush-dynamics">Brush Dynamics<a class="headerlink" href="#brush-dynamics" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.6-brush-dynamics.jpg" alt="Brush Dynamics illustration"/>
+</figure>
+
+<p>Brush dynamics let you map different brush parameters, commonly at least size and opacity, to one or more of three input dynamics: pressure, velocity and random. Velocity and random are usable with a mouse. The Ink tool, that supported velocity before, has been overhauled and now handles velocity-dependent painting much&nbsp;better.</p>
+<p>Brush dynamics have enabled a new feature in stroking paths. There is now a check box under the &#8220;paint tool&#8221; option, for emulating brush dynamics if you stroke using a paint tool. What this means is that when your stroke is being painted by <span class="caps">GIMP</span>, it tells the brush that its pressure and velocity are varying along the length of the stroke. Pressure starts with zero, ramps up to full pressure and then ramps down again to no pressure. Velocity starts from zero and ramps up to full speed by the end of the&nbsp;stroke.</p>
+<h3 id="minor-changes_1">Minor Changes<a class="headerlink" href="#minor-changes_1" title="Permanent link">&para;</a></h3>
+<figure>
+<img src="images/2.6-text-tool-and-rectangle-handles.png" alt="Text Tool bounding box and outside rectangle handles screenshot"/>
+</figure>
+
+<ul>
+<li>Added a bounding box for the Text Tool that supports automatic wrapping of text within that bounding&nbsp;box.</li>
+<li>Move handles for rectangle based tools like Crop and Rectangle Select to the outside of the rectangle when the rectangle is&nbsp;narrow.</li>
+<li>Added motion constraints to the Move&nbsp;Tool.</li>
+<li>Improved event smoothing for paint&nbsp;tools.</li>
+<li>Mark the center of rectangles while they are moved, and snap the center to grid and&nbsp;rulers.</li>
+<li>Enable brush scaling for the Smudge&nbsp;tool.</li>
+<li>Added ability to save presets in all color tools for color adjustments you use&nbsp;frequently.</li>
+<li>Allow to transfer settings from <em>Brightness-Contrast</em> to <em>Levels</em>, and from <em>Levels</em> to <em>Curves</em>.</li>
+<li>Allow changing opacity on transform tool&nbsp;previews.</li>
+<li>The Screenshot plug-in has been given the ability to capture the mouse cursor (using&nbsp;Xfixes).</li>
+<li>Display aspect ratio of the Crop and Rectangle Select Tool rectangles in the status&nbsp;bar.</li>
+<li>Desaturate has been given an on-canvas&nbsp;preview.</li>
+<li>The Flame plug-in has been extended with 22 new&nbsp;variations.</li>
+<li>Data file folders like brush folders are searched recursively for&nbsp;files.</li>
+<li>Replaced the <span class="caps">PSD</span> import plug-in with a rewritten version that does what the old version did plus some other things, for example reading of <span class="caps">ICC</span> color&nbsp;profiles.</li>
+</ul>
+<h2 id="under-the-hood">Under the Hood<a class="headerlink" href="#under-the-hood" title="Permanent link">&para;</a></h2>
+<h3 id="gegl"><span class="caps">GEGL</span><a class="headerlink" href="#gegl" title="Permanent link">&para;</a></h3>
+<p>Important progress towards high bit-depth and non-destructive editing in <span class="caps">GIMP</span> has been made. Most color operations in <span class="caps">GIMP</span> are now ported to the powerful graph based image processing framework <a href="http://www.gegl.org/"><span class="caps">GEGL</span></a>, meaning that the internal processing is being done in 32bit floating point linear light <span class="caps">RGBA</span>. By default the legacy 8bit code paths are still used, but a curious user can turn on the use of <span class="caps">GEGL</span> for the color operations with <em>Colors / Use <span class="caps">GEGL</span></em>.</p>
+<figure>
+<img src="images/2.6-experimental-gegl-tool.png" alt="Experimental GEGL tool screenshot"/>
+</figure>
+
+<p>In addition to porting color operations to <span class="caps">GEGL</span>, an experimental <em><span class="caps">GEGL</span> Operation</em> tool has been added, found in the <em>Tools</em> menu. It enables applying <span class="caps">GEGL</span> operations to an image and it gives on-canvas previews of the results. The screenshot to the right shows this for a Gaussian&nbsp;Blur.</p>
+<h3 id="minor-changes_2">Minor Changes<a class="headerlink" href="#minor-changes_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ported many widgets to use the 2D graphics library <a href="https://www.cairographics.org/">cairo</a> for drawing. See this <a href="images/gimp-curves-tool-2-4-vs-2-6.png">comparison</a> for an example of how much better this&nbsp;looks.</li>
+</ul>
+<h2 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">&para;</a></h2>
+<h3 id="plug-in-development">Plug-in Development<a class="headerlink" href="#plug-in-development" title="Permanent link">&para;</a></h3>
+<p>There are new things for a plug-in developer to enjoy as well. For example, procedures can now give a detailed error description in case of an error, and the error can be propagated to the&nbsp;user.</p>
+<p><span class="caps">GIMP</span> 2.6 also further enhances its scripting abilities. In particular there is now a much richer <span class="caps">API</span> for the creation and manipulation of text layers. Here is a <a href="https://developer.gimp.org/api/2.0/libgimp/libgimp-index-new-in-2-6.html">list of new symbols in <span class="caps">GIMP</span> 2.6</a>.</p>
+<h3 id="backwards-compatibility">Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Permanent link">&para;</a></h3>
+<p>Script-Fu has undergone some clean up and includes several bug fixes. One important bug fix, for <a href="https://bugzilla.gnome.org/show_bug.cgi?id=512105">bug #508020</a>, prevents a possible crash of Script-Fu. A side effect of the fix will break any script which does not provide an initial value for a variable in the binding portion of a <em>let</em>, <em>let*</em>, or <em>letrec</em>&nbsp;block.</p>
+<p>An initial value for a variable is required as stated in the <a href="https://www.schemers.org/Documents/Standards/R5RS/r5rs.pdf"><span class="caps">R5RS</span> Scheme standard document</a>. The initial value can be provided as a simple constant, or as the result of a function call. The following examples will illustrate the problem and show a simple change that will fix a broken&nbsp;script.</p>
+<p>This example shows a <em>let*</em> block with incorrect syntax that will no longer work in&nbsp;Script-Fu.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">let</span><span class="o">*</span><span class="w"> </span><span class="p">(</span>
+<span class="w">      </span><span class="p">(</span><span class="n">four</span><span class="w"> </span><span class="p">(</span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span>
+<span class="w">      </span><span class="p">(</span><span class="n">this</span><span class="o">-</span><span class="n">is</span><span class="o">-</span><span class="n">wrong</span><span class="p">)</span>
+<span class="w">      </span><span class="p">)</span>
+</code></pre></div>
+
+<p>This example shows a <em>let*</em> block with the correct&nbsp;syntax.</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="n">let</span><span class="o">*</span><span class="w"> </span><span class="p">(</span>
+<span class="w">      </span><span class="p">(</span><span class="n">four</span><span class="w"> </span><span class="p">(</span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span>
+<span class="w">      </span><span class="p">(</span><span class="n">this</span><span class="o">-</span><span class="n">is</span><span class="o">-</span><span class="n">correct</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span>
+<span class="w">      </span><span class="p">)</span>
+</code></pre></div>
+
+<h3 id="known-problems">Known Problems<a class="headerlink" href="#known-problems" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The <em>Utility window</em> hint is currently only known to work well in the Linux <span class="caps">GNOME</span> desktop environment and on Windows starting with <span class="caps">GIMP</span>&nbsp;2.6.1.</li>
+<li>Using the Text Tool is currently not an optimal experience. Making it work better is a goal for <span class="caps">GIMP</span>&nbsp;2.8.</li>
+<li>If you build <span class="caps">GIMP</span> yourself and don&#8217;t have <a href="https://en.wikipedia.org/wiki/GVFS">GVfs</a> support on your platform you need to explicitly pass <kbd>--without-gvfs</kbd> to configure, otherwise opening remote files will not work&nbsp;properly.</li>
+</ul>
+<h3 id="whats-planned">What&#8217;s Planned<a class="headerlink" href="#whats-planned" title="Permanent link">&para;</a></h3>
+<p>For the interested, here is roughly what is planned for <span class="caps">GIMP</span> 2.8, the next stable&nbsp;release:</p>
+<ul>
+<li>Merging Google Summer of Code 2008 projects to trunk, namely on-canvas text editing, tagging of <span class="caps">GIMP</span> resources and Python scripting&nbsp;enhancements.</li>
+<li>Continue integration of <span class="caps">GEGL</span>.</li>
+<li>And of course many other&nbsp;improvements&#8230;</li>
+</ul>
+<h2 id="gimp-26-screenshots"><span class="caps">GIMP</span> 2.6 Screenshots<a class="headerlink" href="#gimp-26-screenshots" title="Permanent link">&para;</a></h2>
+<figure>
+<a href="../screenshots/gnome-1280x800-fresh-start.jpg"><img src="../screenshots/gnome-1280x800-fresh-start.jpg" alt="First GIMP 2.6 startup"/></a>
+<figcaption>
+First startup of <span class="caps">GIMP</span> 2.6 on a 1280x800 <span class="caps">GNOME</span> desktop.
+</figcaption>
+</figure>
+
+<figure>
+<a href="../screenshots/alternative-2-6-ui-layout-example-one.jpg"><img src="../screenshots/alternative-2-6-ui-layout-example-one.jpg" alt="Alternative UI example"/></a>
+<figcaption>
+<span class="caps">UI</span> layout example: Tool Options moved out of the toolbox.
+</figcaption>
+</figure>
+
+<figure>
+<a href="../screenshots/alternative-2-6-ui-layout-example-two.jpg"><img src="../screenshots/alternative-2-6-ui-layout-example-two.jpg" alt="Another alternative UI example"/></a>
+<figcaption>
+<span class="caps">UI</span> layout example: Using the image window as a background window.
+</figcaption>
+</figure>
+
+<figure>
+<a href="../screenshots/2.6-brush-dynamics-example.jpg"><img src="../screenshots/2.6-brush-dynamics-example.jpg" alt="Brush Dynamics at use"/></a>
+<figcaption>
+Demonstrating the kind of effects the new Brush Dynamics can create.
+</figcaption>
+</figure>
+
+<figure>
+<a href="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg"><img src="../screenshots/on-canvas-preview-of-gaussian-blur-in-2-6.jpg" alt="On-canvas Gaussian Blur"/></a>
+<figcaption>
+Full screenshot of on-canvas preview of Gaussian Blur using the experimental <span class="caps">GEGL</span> Operation tool.
+</figcaption>
+</figure>
+
+<h2 id="we-hope-you-enjoy-gimp-26">We Hope You Enjoy <span class="caps">GIMP</span> 2.6!<a class="headerlink" href="#we-hope-you-enjoy-gimp-26" title="Permanent link">&para;</a></h2>
+<figure>
+<img src="images/2.6-lgm-2008-groupshot.jpg" alt="LGM 2008 shot of the GIMP team"/>
+<figcaption>
+A picture of (mostly) <span class="caps">GIMP</span> developers, taken by [Garrett LeSage](https://www.flickr.com/photos/garrett/2733807768/) at [Libre Graphics Meeting 2008](https://www.libregraphicsmeeting.org/2008/), licenced under [<span class="caps">CC</span>-By](https://creativecommons.org/licenses/by/2.0/deed.en)
+</figcaption>
+</figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="../docs/index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='../docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../bugs/index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.6.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:52 GMT -->
+</html>

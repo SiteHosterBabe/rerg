@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - GIMP 2.5 Release Notes</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='gimp-2.5.html' />
+        <meta itemprop='name' content='GIMP - GIMP 2.5 Release Notes' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='gimp-2.5.html' />
+        <meta property='og:title' content='GIMP - GIMP 2.5 Release Notes' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Pat David' />
+        <meta property='og:author' content='Pat David' />
+
+        <meta itemprop='description' content="This is an unstable development version of the GNU Image Manipulation Program. Please realize that this is just a snapshot of the development tree. We are working hard towards GIMP 2.6, the next stable release. GIMP 2.5 is in no way a final product. A lot of new …" />
+        <meta property='og:description' content="This is an unstable development version of the GNU Image Manipulation Program. Please realize that this is just a snapshot of the development tree. We are working hard towards GIMP 2.6, the next stable release. GIMP 2.5 is in no way a final product. A lot of new …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="../docs/index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="../docs/index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1><span class="caps">GIMP</span> 2.5 Release&nbsp;Notes</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <p>This is an unstable development version of the <strong><span class="caps">GNU</span> Image Manipulation Program</strong>. Please realize that this is just a snapshot of the development tree. We are working hard towards <span class="caps">GIMP</span> 2.6, the next stable release. <span class="caps">GIMP</span> 2.5 is in no way a final product. A lot of new features are incomplete and some things may even be completely broken. If you need to get work done, please use the stable version, <span class="caps">GIMP</span>&nbsp;2.4.</p>
+<h2 id="whats-new-in-gimp-25">What&#8217;s New in <span class="caps">GIMP</span> 2.5<a class="headerlink" href="#whats-new-in-gimp-25" title="Permanent link">&para;</a></h2>
+<h3 id="ui-changes"><span class="caps">UI</span> changes<a class="headerlink" href="#ui-changes" title="Permanent link">&para;</a></h3>
+<p><span class="caps">GIMP</span> has several <span class="caps">UI</span> changes in this version, many of them offering relief to long standing&nbsp;issues.</p>
+<p>A major change is the appearance of an &#8220;empty image window&#8221;. This window is a placeholder where your image will eventually open, also a drop zone into which you can drag-and-drop your file and start working. You will also notice that the Toolbox menu is gone: it has been merged into the image window menu. Toolbox and docks are treated as utility windows, so if your window manager supports it, then your problems with docks and toolbox getting lost under other windows are over. Unfortunately, at this moment utility window hints only work correctly in metacity, the Gnome default window&nbsp;manager.</p>
+<p>There are also a couple of nice usability changes concerning docks. Have you ever been aggravated to no end because you accidentally closed your neatly set up dock and had to build it from scratch again? That is no longer a source of stress, because the Window menu now holds a list of recently closed docks, and just one click can bring your carefully constructed setup back to you. Another common annoyance is incidentally dragging tabs out of docks. Now <span class="caps">GIMP</span> lets you lock your tabs to make sure that does not&nbsp;happen.</p>
+<p>One of the most desired changes over the years has been &#8220;overpanning&#8221;: the ability to pull those pesky corners, that are so hard to reach with just the right point of the brush, to the front and center. This is now finally available. Panning does not have to stop when the image edge reaches the window edge. You can go on panning, and position the area you work on where it is comfortable for&nbsp;you.</p>
+<h3 id="improved-freehand-select-tool">Improved Freehand select tool<a class="headerlink" href="#improved-freehand-select-tool" title="Permanent link">&para;</a></h3>
+<p>The freehand select tool has been enhanced to support polygon segments in selections. Selection segments are all independently adjustable. This significant improvement fills the need for making polygonal selections without creating yet another&nbsp;tool.</p>
+<h3 id="improved-help-system">Improved help system<a class="headerlink" href="#improved-help-system" title="Permanent link">&para;</a></h3>
+<p>Ever been bothered by the fact that you need a single page of help but can&#8217;t get it because you don&#8217;t have the whole large help docs package installed? Despair no more. <span class="caps">GIMP</span> now supports online help. All you need is a network connection and that particular page opens in your browser when you ask for help anywhere in <span class="caps">GIMP</span>.</p>
+<h3 id="brush-dynamics">Brush dynamics<a class="headerlink" href="#brush-dynamics" title="Permanent link">&para;</a></h3>
+<p>Brush dynamics let you map different brush parameters, commonly at least size and opacity, to one or more of three input dynamics: pressure, velocity and random. Velocity and random are usable with a mouse. The Ink tool, that supported velocity before, has been overhauled and now handles velocity-dependent painting much&nbsp;better.</p>
+<p>Brush dynamics have enabled a new feature in stroking paths. There is now a check box under the &#8220;paint tool&#8221; option, for emulating brush dynamics if you stroke using a paint tool. What this means is that when your stroke is being painted by <span class="caps">GIMP</span>, it tells the brush that its pressure and velocity are varying along the length of the stroke. Pressure starts with zero, ramps up to full pressure and then ramps down again to no pressure. Velocity starts from zero and ramps up to full speed by the end of the&nbsp;stroke.</p>
+<h3 id="preset-saving-for-color-tools">Preset saving for color tools<a class="headerlink" href="#preset-saving-for-color-tools" title="Permanent link">&para;</a></h3>
+<p>Now you can save presets in all color tools for color adjustments you use&nbsp;frequently.</p>
+<h3 id="under-the-hood">Under the hood<a class="headerlink" href="#under-the-hood" title="Permanent link">&para;</a></h3>
+<p>Most notable of under-the-hood changes are the first steps of <a href="http://gegl.org/"><span class="caps">GEGL</span></a> integration. Right now the effect on user experience is minimal, but it is an important development for the future. Once <span class="caps">GEGL</span> integration is complete, <span class="caps">GIMP</span> will finally get support for higher color depths, more color spaces and eventually non-destructive&nbsp;editing.</p>
+<p>Peeking out from under the hood are subtle differences in the way the <span class="caps">UI</span> draws its elements. These changes are due to internally making use of the Cairo library to draw <span class="caps">UI</span> elements. This is visible for example in the drawing of Layers and Paths docks and Curves&nbsp;dialog.</p>
+<p>Please see the <a href="https://git.gnome.org/browse/gimp/plain/NEWS?id=GIMP_2_5_0"><span class="caps">NEWS</span></a> file for a more detailed list of changes. <a href="https://developer.gimp.org/screenshots.html">Screenshots</a> of the development version can also be found&nbsp;there.</p>
+<h2 id="download">Download<a class="headerlink" href="#download" title="Permanent link">&para;</a></h2>
+<p>The development snapshots of <span class="caps">GIMP</span> can be downloaded as source code from ftp.gimp.org or from one of the mirrors listed in the <a href="../downloads/index.html#mirrors">Downloads</a>&nbsp;section.</p>
+<p>Distribution of binary packages of the development version is discouraged unless it is made clear that this is an early development snapshot. Users should be referred to these release notes or similar&nbsp;information.</p>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p><span class="caps">GIMP</span> 2.5 must <strong>not</strong> be installed in the same prefix as other <span class="caps">GIMP</span> 2.x versions. If you want to keep your <span class="caps">GIMP</span> 2.4 installation in parallel to <span class="caps">GIMP</span> 2.5, you have to choose a separate installation prefix at compile-time and ensure that you use different library search paths for each version. If you do not set up your environment differently for each version, you will experience conflicts with the libraries and at least one version is likely to&nbsp;fail.</p>
+<p>You install the new version into a separate prefix, say /opt/gimp-2.5 by passing <code>--prefix=/opt/gimp-2.5</code> to the configure script. Then, in order to run the binary installed there, you change your environment to look for executables in /opt/gimp-2.5/bin by setting <code>PATH=/opt/gimp-2.5/bin</code> and you tell your linker to pick up libraries from /opt/gimp-2.5/lib by setting <code>LD_LIBRARY_PATH=/opt/gimp-2.5/lib</code>. Do not forget to <code>export</code> both&nbsp;variables.</p>
+<p>You can use a tiny wrapper script called gimp-2.5 and place it into /usr/local/bin or elsewhere in your <span class="caps">PATH</span>. The script would look something like&nbsp;this:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ch">#!/bin/sh</span>
+
+<span class="nv">PATH</span><span class="o">=</span>/opt/gimp-2.5/bin:<span class="nv">$PATH</span>
+<span class="nb">export</span><span class="w"> </span>PATH
+<span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/opt/gimp-2.5/lib
+<span class="nb">export</span><span class="w"> </span>LD_LIBRARY_PATH
+
+/opt/gimp-2.5/bin/gimp-2.5<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+</code></pre></div></td></tr></table></div>
+
+<h2 id="bugs">Bugs<a class="headerlink" href="#bugs" title="Permanent link">&para;</a></h2>
+<p>If you think you found a bug in a development version, please make sure that it hasn&#8217;t been already reported. Search <a href="https://bugzilla.gnome.org/">Bugzilla</a> before filing a new bug-report. Here are some interesting Bugzilla&nbsp;queries:</p>
+<ul>
+<li><a href="https://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.6&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">Open bugs with milestone&nbsp;2.6</a></li>
+<li><a href="https://bugzilla.gnome.org/buglist.cgi?product=GIMP&amp;target_milestone=2.6&amp;bug_status=RESOLVED&amp;bug_status=VERIFIED&amp;bug_status=CLOSED">Resolved bugs with milestone&nbsp;2.6</a></li>
+</ul>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>We need your help to make <span class="caps">GIMP</span> 2.6 a success. There&#8217;s still a lot to do. If you want to join us hacking, show up in #gimp or introduce yourself on the gimp-developer mailing-list. We are also looking for people to look after the web-site and update the tutorials. Or you might want to join the <a href="https://docs.gimp.org/">documentation team</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="../docs/index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='../docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../bugs/index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/release-notes/gimp-2.5.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:52 GMT -->
+</html>
