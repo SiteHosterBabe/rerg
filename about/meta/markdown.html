@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/about/meta/markdown.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 09:32:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - Markdown Cheatsheet</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="https://www.gimp.org/images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="https://www.gimp.org/theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.gimp.org/theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.gimp.org/theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="https://www.gimp.org/theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="https://www.gimp.org/theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="https://www.gimp.org/feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="https://www.gimp.org/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="https://www.gimp.org/theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="https://www.gimp.org/theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='https://www.gimp.org/about/meta/markdown.html' />
+        <meta itemprop='name' content='GIMP - Markdown Cheatsheet' />
+        <meta itemprop='image' content='https://www.gimp.org/images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='https://www.gimp.org/about/meta/markdown.html' />
+        <meta property='og:title' content='GIMP - Markdown Cheatsheet' />
+        <meta property='og:image' content='https://www.gimp.org/images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Pat David' />
+        <meta property='og:author' content='Pat David' />
+
+        <meta itemprop='description' content="This is a simple cheatsheet for writing in Markdown. For a more complete reference, the Python-Markdown package refers one to the Markdown Syntax from John Gruber. Paragraphs and Line Breaks Headers Blockquotes A Header 3 Lists Code Blocks Horizontal Rule Links Emphasis Code Automatic Links Paragraphs and Line Breaks¶ Paragraphs …" />
+        <meta property='og:description' content="This is a simple cheatsheet for writing in Markdown. For a more complete reference, the Python-Markdown package refers one to the Markdown Syntax from John Gruber. Paragraphs and Line Breaks Headers Blockquotes A Header 3 Lists Code Blocks Horizontal Rule Links Emphasis Code Automatic Links Paragraphs and Line Breaks¶ Paragraphs …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="https://www.gimp.org/"><img src='https://www.gimp.org/images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="https://www.gimp.org/downloads/"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="https://www.gimp.org/news/"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="https://www.gimp.org/about/"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="https://www.gimp.org/docs/"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="https://www.gimp.org/develop/"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="https://www.gimp.org/tutorials/"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="https://www.gimp.org/donating/"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='https://www.gimp.org/theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="https://www.gimp.org/" class='navfive'>
+                <img id='wilber-tiny' src="https://www.gimp.org/images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="https://www.gimp.org/news/" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="https://www.gimp.org/docs/" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="https://www.gimp.org/tutorials/" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1>Markdown&nbsp;Cheatsheet</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <p>This is a simple cheatsheet for writing in <a href="https://daringfireball.net/projects/markdown/">Markdown</a>.
+For a more complete reference, the Python-Markdown package refers one to the <a href="https://daringfireball.net/projects/markdown/syntax">Markdown Syntax</a> from John&nbsp;Gruber.</p>
+<div class="toc">
+<ul>
+<li><a href="#paragraphs-and-line-breaks">Paragraphs and Line&nbsp;Breaks</a></li>
+<li><a href="#headers">Headers</a></li>
+<li><a href="#blockquotes">Blockquotes</a><ul>
+<li><a href="#a-header-3">A Header&nbsp;3</a></li>
+</ul>
+</li>
+<li><a href="#lists">Lists</a></li>
+<li><a href="#code-blocks">Code&nbsp;Blocks</a></li>
+<li><a href="#horizontal-rule">Horizontal&nbsp;Rule</a></li>
+<li><a href="#links">Links</a></li>
+<li><a href="#emphasis">Emphasis</a></li>
+<li><a href="#code">Code</a></li>
+<li><a href="#automatic-links">Automatic&nbsp;Links</a></li>
+</ul>
+</div>
+<h2 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks<a class="headerlink" href="#paragraphs-and-line-breaks" title="Permanent link">&para;</a></h2>
+<p>Paragraphs are one or more consecutive lines of text, separated by one or more blank lines.
+A blank link will indicate a new paragraph to&nbsp;begin.</p>
+<p>If a hard <code>&lt;br /&gt;</code> is desired, simply end the line with two or more spaces.
+The next line will still be in the same <code>&lt;p&gt;</code> element, but will be&nbsp;hard-wrapped.</p>
+<p>The above paragraphs look like this in plain&nbsp;Markdown:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">Paragraphs</span><span class="w"> </span><span class="nv">are</span><span class="w"> </span><span class="nv">one</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="nv">more</span><span class="w"> </span><span class="nv">consecutive</span><span class="w"> </span><span class="nv">lines</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">text</span>,
+<span class="nv">separated</span><span class="w"> </span><span class="nv">by</span><span class="w"> </span><span class="nv">one</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="nv">more</span><span class="w"> </span><span class="nv">blank</span><span class="w"> </span><span class="nv">lines</span>.
+<span class="nv">A</span><span class="w"> </span><span class="nv">blank</span><span class="w"> </span><span class="nv">link</span><span class="w"> </span><span class="nv">will</span><span class="w"> </span><span class="nv">indicate</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">new</span><span class="w"> </span><span class="nv">paragraph</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">begin</span>.
+
+<span class="k">If</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">hard</span><span class="w"> </span>`<span class="o">&lt;</span><span class="nv">br</span><span class="w"> </span><span class="o">/&gt;</span>`<span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">desired</span>,
+<span class="nv">simply</span><span class="w"> </span><span class="k">end</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">line</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="nv">two</span><span class="w"> </span><span class="nv">or</span><span class="w"> </span><span class="nv">more</span><span class="w"> </span><span class="nv">spaces</span>.
+<span class="nv">The</span><span class="w"> </span><span class="k">next</span><span class="w"> </span><span class="nv">line</span><span class="w"> </span><span class="nv">will</span><span class="w"> </span><span class="nv">still</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">same</span><span class="w"> </span>`<span class="o">&lt;</span><span class="nv">p</span><span class="o">&gt;</span>`<span class="w"> </span><span class="nv">element</span>,
+<span class="nv">but</span><span class="w"> </span><span class="nv">will</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">hard</span><span class="o">-</span><span class="nv">wrapped</span>.
+</code></pre></div>
+
+<h2 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h2>
+<p>Markdown uses two styles to denote&nbsp;headers.</p>
+<p>Setext-style headers use &#8220;underlines&#8221; with equal signs (for first-level headers), and dashes (for second&nbsp;level):</p>
+<div class="highlight"><pre><span></span><code><span class="gh">This is an H1</span>
+<span class="gh">=============</span>
+
+<span class="gh">This is an H2</span>
+<span class="gh">-------------</span>
+</code></pre></div>
+
+<p>Atx-style headers use from 1-6 hash characters at the start of the line,
+corresponding to header levels&nbsp;1-6:</p>
+<div class="highlight"><pre><span></span><code># This is an H1
+## This is an H2
+#### This is an H4
+</code></pre></div>
+
+<h2 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h2>
+<p>Blockquotes use a familiar email-style &#8220;&gt;&#8221; character for&nbsp;quoting:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nv">This</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">blockquote</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="nv">some</span><span class="w"> </span><span class="nv">information</span>.<span class="w"> </span><span class="k">If</span><span class="w"> </span><span class="nv">you</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="nv">think</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">needs</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">quoted</span>.
+</code></pre></div>
+
+<blockquote>
+<p>This is a blockquote with some information. If you
+think this needs to be&nbsp;quoted.</p>
+</blockquote>
+<p>Alternatively you can be lazy and only use the &#8220;&gt;&#8221; character before the first line of a hard-wrapped&nbsp;paragraph:</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nv">This</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">blockquote</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="nv">some</span><span class="w"> </span><span class="nv">information</span>.<span class="w">  </span><span class="k">If</span><span class="w"> </span><span class="nv">you</span>
+<span class="nv">think</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">needs</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">quoted</span>,<span class="w"> </span><span class="nv">here</span><span class="w"> </span><span class="nv">it</span><span class="w"> </span><span class="nv">is</span>.
+</code></pre></div>
+
+<blockquote>
+<p>This is a blockquote with some information.  If you
+think this needs to be quoted, here it&nbsp;is.</p>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nv">This</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">blockquote</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="nv">some</span><span class="w"> </span><span class="nv">information</span>.<span class="w">  </span><span class="k">If</span><span class="w"> </span><span class="nv">you</span>
+<span class="nv">think</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">needs</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">quoted</span>,<span class="w"> </span><span class="nv">here</span><span class="w"> </span><span class="nv">it</span><span class="w"> </span><span class="nv">is</span>.<span class="w"> </span><span class="nv">Here</span><span class="w"> </span><span class="nv">is</span>
+<span class="nv">a</span><span class="w"> </span><span class="nv">nested</span><span class="w"> </span><span class="nv">quote</span><span class="w"> </span><span class="nv">inside</span><span class="w"> </span><span class="nv">this</span><span class="w"> </span><span class="nv">blockquote</span>:
+<span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nv">A</span><span class="w"> </span><span class="nv">nested</span><span class="w"> </span><span class="nv">quote</span><span class="w"> </span><span class="nv">inside</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">previosu</span><span class="w"> </span><span class="nv">blockquote</span><span class="o">!</span>
+</code></pre></div>
+
+<blockquote>
+<p>This is a blockquote with some information.  If you
+think this needs to be quoted, here it is. Here is
+a nested quote inside this&nbsp;blockquote:</p>
+<blockquote>
+<p>A nested quote inside a previous&nbsp;blockquote!</p>
+</blockquote>
+</blockquote>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nv">Blockquotes</span><span class="w"> </span><span class="nv">can</span><span class="w"> </span><span class="nv">also</span><span class="w"> </span><span class="nv">have</span><span class="w"> </span><span class="o">**</span><span class="nv">Markdown</span><span class="o">**</span><span class="w"> </span><span class="nv">elements</span>
+<span class="nv">inside</span><span class="w"> </span><span class="nv">them</span><span class="w"> </span><span class="nv">that</span><span class="w"> </span><span class="o">*</span><span class="nv">will</span><span class="o">*</span><span class="w"> </span><span class="nv">get</span><span class="w"> </span><span class="nv">parsed</span>.
+
+<span class="o">&gt;</span><span class="w"> </span>###<span class="w"> </span><span class="nv">A</span><span class="w"> </span><span class="nv">Header</span><span class="w"> </span><span class="mi">3</span>
+<span class="k">For</span><span class="w"> </span><span class="nv">all</span><span class="w"> </span><span class="nv">to</span><span class="w"> </span><span class="nv">see</span>.
+</code></pre></div>
+
+<blockquote>
+<p>Blockquotes can also have <strong>Markdown</strong> elements
+inside them that <strong>will</strong> get&nbsp;parsed.</p>
+<h3 id="a-header-3">A Header 3<a class="headerlink" href="#a-header-3" title="Permanent link">&para;</a></h3>
+<p>For all to&nbsp;see.</p>
+</blockquote>
+<h2 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
+<p>Ordered and unordered lists are&nbsp;supported.</p>
+<p>Unordered lists use asterisks, pluses, and/or hyphens &#8212; interchangeably &#8212; as&nbsp;markers:</p>
+<div class="highlight"><pre><span></span><code>* Red
+* Green
++ Blue
+</code></pre></div>
+
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>Ordered lists use numbers followed by&nbsp;periods:</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="kr">On</span><span class="n">e</span><span class="w"> </span><span class="n">Fish</span>
+<span class="mf">2.</span><span class="w"> </span><span class="n">Two</span><span class="w"> </span><span class="n">Fish</span>
+<span class="mf">3.</span><span class="w"> </span><span class="n">Red</span><span class="w"> </span><span class="n">Fish</span>
+<span class="mf">5.</span><span class="w"> </span><span class="n">Blue</span><span class="w"> </span><span class="n">Fish</span>
+</code></pre></div>
+
+<ol>
+<li>One&nbsp;Fish</li>
+<li>Two&nbsp;Fish</li>
+<li>Red&nbsp;Fish</li>
+<li>Blue&nbsp;Fish</li>
+</ol>
+<p><strong>Notice</strong> that the actual numbers are not used in creation of the list!
+The last element in our example is not a typo - it is a number &#8220;5&#8221;, not&nbsp;4.</p>
+<p>There can be multiple paragraphs in a list item.
+Each subsequent paragraph needs to be indented by either 4 spaces or one&nbsp;tab:</p>
+<div class="highlight"><pre><span></span><code><span class="mf">1.</span><span class="w"> </span><span class="n">This</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">first</span><span class="w"> </span><span class="kr">list</span><span class="w"> </span><span class="n">item</span><span class="mf">.</span>
+
+<span class="w">    </span><span class="n">I</span><span class="w"> </span><span class="n">should</span><span class="w"> </span><span class="n">probably</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">little</span><span class="w"> </span><span class="n">neater</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="kr">next</span><span class="w"> </span><span class="n">item</span><span class="mf">.</span>
+<span class="w">    </span><span class="n">I</span><span class="err">&#39;</span><span class="n">ll</span><span class="w"> </span><span class="n">try</span><span class="w"> </span><span class="kr">to</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">sure</span><span class="w"> </span><span class="n">things</span><span class="w"> </span><span class="n">look</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">little</span><span class="w"> </span><span class="n">nicer</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">example</span><span class="mf">.</span>
+
+<span class="mf">2.</span><span class="w">  </span><span class="n">This</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">second</span><span class="w"> </span><span class="kr">list</span><span class="w"> </span><span class="n">item</span>
+<span class="w">    </span><span class="n">Just</span><span class="w"> </span><span class="n">added</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">extra</span><span class="w"> </span><span class="n">whitespace</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">front</span><span class="w"> </span><span class="n">of</span><span class="w"> </span><span class="n">this</span><span class="w"> </span><span class="kr">to</span><span class="w"> </span><span class="n">make</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">neater</span>
+<span class="w">    </span><span class="n">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="n">example</span><span class="mf">.</span>
+</code></pre></div>
+
+<ol>
+<li>
+<p>This is a first list&nbsp;item.</p>
+<p>I should probably make this a little neater in the next item.
+I&#8217;ll try to make sure things look a little nicer as an&nbsp;example.</p>
+</li>
+<li>
+<p>This is a second list item
+    Just added some extra whitespace in front of this to make it neater
+    in the source&nbsp;example.</p>
+</li>
+</ol>
+<h2 id="code-blocks">Code Blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h2>
+<p>Code blocks will present the text exactly as shown and will automatically convert objects to their corresponding html entity.
+To create a code block, simply indent every line of the block by 4 spaces or one&nbsp;tab:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">This</span><span class="w"> </span><span class="nv">would</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">normal</span><span class="w"> </span><span class="nv">pargraph</span><span class="w"> </span><span class="nv">in</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">document</span>.
+
+<span class="w">    </span><span class="nv">This</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">indented</span><span class="w"> </span><span class="nv">by</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="nv">spaces</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">would</span><span class="w"> </span><span class="k">show</span><span class="w"> </span><span class="nv">up</span><span class="w"> </span><span class="nv">as</span><span class="w"> </span><span class="nv">code</span>.
+<span class="w">    </span><span class="nv">This</span><span class="w"> </span><span class="nv">second</span><span class="w"> </span><span class="nv">line</span><span class="w"> </span><span class="nv">would</span><span class="w"> </span><span class="nv">still</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">that</span><span class="w"> </span><span class="nv">code</span><span class="w"> </span><span class="nv">block</span>.
+</code></pre></div>
+
+<p>This would be a normal paragraph in a&nbsp;document.</p>
+<div class="highlight"><pre><span></span><code><span class="nv">This</span><span class="w"> </span><span class="nv">is</span><span class="w"> </span><span class="nv">indented</span><span class="w"> </span><span class="nv">by</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="nv">spaces</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="nv">would</span><span class="w"> </span><span class="k">show</span><span class="w"> </span><span class="nv">up</span><span class="w"> </span><span class="nv">as</span><span class="w"> </span><span class="nv">code</span>.
+<span class="nv">This</span><span class="w"> </span><span class="nv">second</span><span class="w"> </span><span class="nv">line</span><span class="w"> </span><span class="nv">would</span><span class="w"> </span><span class="nv">still</span><span class="w"> </span><span class="nv">be</span><span class="w"> </span><span class="nv">part</span><span class="w"> </span><span class="nv">of</span><span class="w"> </span><span class="nv">that</span><span class="w"> </span><span class="nv">code</span><span class="w"> </span><span class="nv">block</span>.
+</code></pre></div>
+
+<p>With the Python-Markdown extensions, you can also include an explicit declaration of the type of code for highlighting.
+Begin the code block with three colons followed by the language to highlight&nbsp;as:</p>
+<div class="highlight"><pre><span></span><code>    :::html
+    &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+</code></pre></div>
+
+<p>Which will&nbsp;yield:</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1&quot;</span> <span class="p">/&gt;</span>
+</code></pre></div>
+
+<h2 id="horizontal-rule">Horizontal Rule<a class="headerlink" href="#horizontal-rule" title="Permanent link">&para;</a></h2>
+<p>A horizontal rule tag <code>&lt;hr /&gt;</code> can be inserted by simply using three or more hyphens, asterisks, or underscores on a line by&nbsp;themselves:</p>
+<div class="highlight"><pre><span></span><code>* * *
+***
+*********
+- - -
+---
+_________
+</code></pre></div>
+
+<p>Any of those will insert the horizontal rule at that&nbsp;location:</p>
+<hr>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<p>Markdown offers two styles of links: <em>inline</em> and <em>reference</em>.</p>
+<p>The link text is enclosed by [square&nbsp;brackets].</p>
+<p>Inline links use parenthesis immediately after the closing square bracket to contain the link <span class="caps">URL</span>, and an optional&nbsp;title:</p>
+<div class="highlight"><pre><span></span><code>This will [link to pixls.us](https://pixls.us &quot;A Link to pixls.us&quot;).
+</code></pre></div>
+
+<p>This will <a href="https://pixls.us/" title="A Link to pixls.us">link to pixls.us</a>.</p>
+<p>You can use relative paths while on the same&nbsp;site:</p>
+<div class="highlight"><pre><span></span><code><span class="n">A</span><span class="w"> </span><span class="n">link</span><span class="w"> </span><span class="n">back</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="p">[</span><span class="n">Meta</span><span class="w"> </span><span class="n">page</span><span class="p">](</span><span class="o">/</span><span class="n">about</span><span class="o">/</span><span class="n">meta</span><span class="o">/</span><span class="p">).</span>
+<span class="n">A</span><span class="w"> </span><span class="n">link</span><span class="w"> </span><span class="n">back</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="p">[</span><span class="n">Meta</span><span class="w"> </span><span class="n">page</span><span class="p">](..</span><span class="o">/</span><span class="n">meta</span><span class="o">/</span><span class="p">).</span>
+</code></pre></div>
+
+<p>A link back to the <a href="https://www.gimp.org/about/meta/">Meta page</a>.
+A link back to the <a href="https://www.gimp.org/about/meta/">Meta page</a>.</p>
+<p>Reference-style links use a second set of square brackets with a self-chosen label to identify the&nbsp;link:</p>
+<div class="highlight"><pre><span></span><code><span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">another</span><span class="w"> </span><span class="n">link</span><span class="w"> </span><span class="k">to</span><span class="w"> </span><span class="o">[</span><span class="n">pixls</span><span class="o">][</span><span class="n">1</span><span class="o">]</span>
+</code></pre></div>
+
+<p>Then anywhere in the document you can define the link label on it&#8217;s own&nbsp;line:</p>
+<div class="highlight"><pre><span></span><code>[<span class="mi">1</span>]:<span class="w"> </span><span class="nv">https</span>:<span class="o">//</span><span class="nv">pixls</span>.<span class="nv">us</span><span class="w"> </span><span class="s2">&quot;An Optional Title for the Link&quot;</span>
+</code></pre></div>
+
+<p>Link definition names can contain any numbers, letters, spaces, or punctuation and are not&nbsp;case-sensitive:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[link text][a]</span>
+<span class="k">[link text][A]</span>
+</code></pre></div>
+
+<p>are equivalent&nbsp;links.</p>
+<p>There is also an <em>implicit link name</em> shortcut that lets you use the link text itself as the identifier.
+Use a second set of empty square brackets after the initial link&nbsp;text:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="n">Google</span><span class="o">]</span><span class="err">[]</span>
+</code></pre></div>
+
+<p>Where the link can then be identified elsewhere&nbsp;as:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="n">Google</span><span class="o">]</span><span class="err">:</span><span class="w"> </span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">google</span><span class="p">.</span><span class="n">com</span>
+</code></pre></div>
+
+<h2 id="emphasis">Emphasis<a class="headerlink" href="#emphasis" title="Permanent link">&para;</a></h2>
+<p>Asterisks (*) and underscores (_) are used as indicators of emphasis.
+Text wrapped in on asterisk or underscore will be wrapped with an <span class="caps">HTML</span> <code>&lt;em&gt;</code> element.
+Double asterisks or underscores will be wrapped with an <span class="caps">HTML</span> <code>&lt;strong&gt;</code> tag:</p>
+<div class="highlight"><pre><span></span><code>*single asterisk*
+_single underscore_
+**double asterisks**
+__double underscores__
+</code></pre></div>
+
+<p>outputs:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;em&gt;</span>single<span class="w"> </span>asterisk<span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;em&gt;</span>single<span class="w"> </span>underscore<span class="nt">&lt;/em&gt;</span>
+<span class="nt">&lt;strong&gt;</span>double<span class="w"> </span>asterisks**
+<span class="nt">&lt;strong&gt;</span>double<span class="w"> </span>underscores<span class="nt">&lt;/strong&gt;</span>
+</code></pre></div>
+
+<p>or:</p>
+<p><em>single asterisk</em>
+<em>single underscore</em>
+<strong>double asterisks</strong>
+<strong>double&nbsp;underscores</strong></p>
+<h2 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h2>
+<p>An inline span of code uses the backtick quote (`) to offset it from surrounding&nbsp;text.</p>
+<div class="highlight"><pre><span></span><code>You can use the `printf()` function.
+</code></pre></div>
+
+<p>produces:</p>
+<p>You can use the <code>printf()</code> function.</p>
+<h2 id="automatic-links">Automatic Links<a class="headerlink" href="#automatic-links" title="Permanent link">&para;</a></h2>
+<p>A shortcut for creating links to URLs and email addresses can be used where the address is wrapped in angle&nbsp;brackets:</p>
+<div class="highlight"><pre><span></span><code>&lt;https://pixls.us&gt;
+</code></pre></div>
+
+<p>Which will be turned into an html link of the address&nbsp;text:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;a</span><span class="w"> </span><span class="na">href=</span><span class="s">&quot;https://pixls.us&quot;</span><span class="nt">&gt;</span>https://pixls.us<span class="nt">&lt;/a&gt;</span>
+</code></pre></div>
+
+<p><a href="https://pixls.us/">https://pixls.us</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="https://www.gimp.org/"><img src='https://www.gimp.org/images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="https://www.gimp.org/downloads/"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="https://www.gimp.org/news/"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="https://www.gimp.org/about/"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="https://www.gimp.org/docs/"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="https://www.gimp.org/donating/"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="https://www.gimp.org/develop/">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="https://www.gimp.org/tutorials/"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='https://www.gimp.org/features/'>Features</a></li>
+                            <li><a href='https://www.gimp.org/release-notes/'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='https://www.gimp.org/docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='https://www.gimp.org/bugs/'>Bug Reports</a></li>
+                            <li><a href='https://www.gimp.org/discuss.html'>Discuss</a></li>
+                            <li><a href='https://www.gimp.org/books/'>Books</a></li>
+                            <li><a href='https://www.gimp.org/donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="https://www.gimp.org/feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="https://www.gimp.org/webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="https://www.gimp.org/images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://www.gimp.org/team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='https://www.gimp.org/js/push-menu.js'></script>
+
+    <script async src='https://www.gimp.org/js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/about/meta/markdown.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 09:32:32 GMT -->
+</html>
