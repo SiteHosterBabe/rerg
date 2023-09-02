@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/docs/script-fu-update.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:58:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - Script-Fu in GIMP 2.4</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='script-fu-update.html' />
+        <meta itemprop='name' content='GIMP - Script-Fu in GIMP 2.4' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='script-fu-update.html' />
+        <meta property='og:title' content='GIMP - Script-Fu in GIMP 2.4' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Pat David' />
+        <meta property='og:author' content='Pat David' />
+
+        <meta itemprop='description' content="Since version 1.0 of GIMP, it has included a powerful scripting language which permits extending the program’s capabilities and simplifying repetitive tasks. This scripting language, called “Script-fu”, was based upon the Scheme programming language and implemented the SIOD interpreter written by George J. Carrette while he was a …" />
+        <meta property='og:description' content="Since version 1.0 of GIMP, it has included a powerful scripting language which permits extending the program’s capabilities and simplifying repetitive tasks. This scripting language, called “Script-fu”, was based upon the Scheme programming language and implemented the SIOD interpreter written by George J. Carrette while he was a …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1>Script-Fu in <span class="caps">GIMP</span>&nbsp;2.4</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <p>Since version 1.0 of <span class="caps">GIMP</span>, it has included a powerful scripting language which permits extending the program&#8217;s capabilities and simplifying repetitive tasks. This scripting language, called &#8220;Script-fu&#8221;, was based upon the Scheme programming language and implemented the <span class="caps">SIOD</span> interpreter written by George J. Carrette while he was a professor at Boston University in the late&nbsp;80s.</p>
+<p>This Script-fu interpreter based upon Carrette&#8217;s <span class="caps">SIOD</span> has served <span class="caps">GIMP</span> extremely well over the last decade &#8212; thousands of scripts have been written and shared by <span class="caps">GIMP</span> users &#8212; but it is starting to show its age and therefore the <span class="caps">GIMP</span> development team has decided to replace it with a more modern Scheme interpreter called TinyScheme. One of the main reasons for this changeover is to support international languages and fonts, for which <span class="caps">SIOD</span> offered no provision. There are other benefits as well, but lack of international support was the most&nbsp;significant.</p>
+<p>Though this switch has required an extensive effort on the part of <span class="caps">GIMP</span> developers (particularly Kevin Cozens) and some significant changes to the internals of the <span class="caps">GIMP</span> code, there should be very little visible change to <span class="caps">GIMP</span> users. <span class="caps">GIMP</span>&#8217;s scripting extension is still called &#8220;Script-fu&#8221; and the vast majority of the scripts already available will still function using the new TinyScheme-based&nbsp;interpreter.</p>
+<p>Despite the desire to keep the impact of this change to <span class="caps">GIMP</span> internals to a minimum, there are some differences between the <span class="caps">SIOD</span>-based interpreter and the TinyScheme-based Script-fu which may crop up when trying to use older scripts with <span class="caps">GIMP</span> 2.4 and more recent releases. What follows is a description of some of the problems which may be encountered and what steps need to be taken to correct&nbsp;them.</p>
+<ul>
+<li><a href="#unbound">Setting an undeclared variable</a>
+    (<tt>Error: set!: unbound variable: x</tt>)</li>
+<li><a href="#condempty">Using the empty list in&nbsp;conditionals</a></li>
+<li><a href="#carempty">Accessing the first element of an empty list</a>
+    (<tt>Error: car: argument 1 must be: pair</tt>)</li>
+<li><a href="#cdrempty">Accessing beyond the last element of a list</a>
+    (<tt>Error: cdr: argument 1 must be: pair</tt>)</li>
+<li><a href="#cons">Constructing a pair</a>
+    (<tt>Error: cons: needs 2 argument(s)</tt>)</li>
+<li><a href="#leadingdot">Fractional numbers must not start with a dot</a>
+    (<tt>Error: eval: unbound variable: .</tt> )</li>
+<li><a href="#deprecated">Deprecated&nbsp;features</a></li>
+<li><a href="#conclusion">Conclusion</a>
+    (and other&nbsp;differences)</li>
+</ul>
+<h2 id="setting-an-undeclared-variable">Setting an undeclared variable<a class="headerlink" href="#setting-an-undeclared-variable" title="Permanent link">&para;</a></h2>
+<p>By far, the most common problem that can be expected if using an older script is that it might assign a value to a variable without first declaring the variable. <span class="caps">SIOD</span>-based Script-fu would permit a statement such as <code>(set! x 4)</code> even if &#8216;<tt>x</tt>&#8216; had not been declared &#8212; &#8216;<tt>x</tt>&#8216; would be defined automatically to be a global variable. The new Script-fu protects against this situation and the programmer <strong>must</strong> declare the variable first. The offending script would result in an error message stating, &#8220;<tt class="warn">Error: set!: unbound variable: x</tt>&#8220;.</p>
+<p>The use of global variables is generally discouraged because another function (written by a different author) may have chosen to use the same name and the two functions would interfere with each other. For this reason, the correct method of declaring &#8216;<tt>x</tt>&#8216; in the preceding example is to use the <code>let</code> or <code>let*</code> statement:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="k">let*</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">(</span><span class="nf">x</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="p">)</span>
+<span class="w">  </span><span class="o">...</span>
+<span class="w">  </span><span class="o">...</span>
+<span class="w">  </span><span class="o">...</span>
+<span class="w">  </span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="the-empty-list-in-conditionals">The empty list in conditionals<a class="headerlink" href="#the-empty-list-in-conditionals" title="Permanent link">&para;</a></h2>
+<p><span class="caps">SIOD</span> treated the empty list to be <span class="caps">FALSE</span> when it appeared in a conditional test (if, while, cond, not, =, etc) whereas the Scheme standard specifies that it should evaluate to <span class="caps">TRUE</span>. Programmers have been aware of this difference since the beginning and it is unlikely that scripts will be encountered which rely upon <span class="caps">SIOD</span>&#8217;s nonstandard behavior but it is possible. A simple solution is to use the &#8216;pair?&#8217; function to test the list. For example, replace <code>(while lis ... )</code> with <code>(while (pair? lis) ...)</code>. Alternately, <code>(not (null? lis))</code> could be used instead of <code>(pair? lis)</code>.</p>
+<h2 id="accessing-the-first-element-of-an-empty-list">Accessing the first element of an empty list<a class="headerlink" href="#accessing-the-first-element-of-an-empty-list" title="Permanent link">&para;</a></h2>
+<p>In <span class="caps">SIOD</span>, taking the &#8216;car&#8217; of an empty list returned an empty list; in TinyScheme this is not permissible and will generate an error message (&#8220;<tt class="warn">Error: car: argument 1 must be: pair</tt>&#8220;). Like the case for conditionals, programmers have been aware of <span class="caps">SIOD</span>&#8217;s nonstandard behavior and encountering this problem should be rare. Correcting such a problem, if encountered, should consist of testing whether a list is empty before accessing&nbsp;it.</p>
+<h2 id="accessing-beyond-the-last-element-of-a-list">Accessing beyond the last element of a list<a class="headerlink" href="#accessing-beyond-the-last-element-of-a-list" title="Permanent link">&para;</a></h2>
+<p>Similar to the preceding problem, <span class="caps">SIOD</span> would permit you to access beyond the last element in a list, returning an empty list as a result. For example, taking the &#8216;cdr&#8217; of an empty list or the &#8216;cddr&#8217; of a one-element list. In <span class="caps">GIMP</span> 2.4, Script-fu will not allow this and it will result in an error message (&#8220;<tt class="warn">Error: cdr: argument 1 must be: pair</tt>&#8220;). Again, <span class="caps">SIOD</span>&#8217;s behavior has long been realized to be non-standard and this problem&#8217;s occurance should be rare. Correcting such a problem, if encountered, should consist of more precise testing when accessing a&nbsp;list.</p>
+<h2 id="constructing-a-pair">Constructing a pair<a class="headerlink" href="#constructing-a-pair" title="Permanent link">&para;</a></h2>
+<p>The Scheme <code>cons</code> function expects two arguments which are combined into a pair. In <span class="caps">SIOD</span>, if only one argument was provided then the second argument was assumed to be an empty list. In <span class="caps">GIMP</span> 2.4, if the second argument is not present than an error occurs (&#8220;<tt class="warn">Error: cons: needs 2 argument(s)</tt>&#8220;). The solution, should this problem be encountered, is explicitly include an empty list as the second&nbsp;argument.</p>
+<h2 id="fractional-numbers-must-not-start-with-a-dot">Fractional numbers must not start with a dot<a class="headerlink" href="#fractional-numbers-must-not-start-with-a-dot" title="Permanent link">&para;</a></h2>
+<p>If you had some numbers written as &#8216;.5&#8217; instead of &#8216;0.5&#8217;, then you may get the error &#8220;<tt class="warn">Error: eval: unbound variable: .</tt> &#8220;. The solution is to make sure that all numbers start with a digit and add a leading &#8216;0&#8217; if necessary. (Note: this is considered as a bug and this may be fixed in a future <span class="caps">GIMP</span>&nbsp;release.)</p>
+<h2 id="deprecated-features">Deprecated features<a class="headerlink" href="#deprecated-features" title="Permanent link">&para;</a></h2>
+<p>The following <span class="caps">SIOD</span> functions or constants are currently made available in TinyScheme Script-fu but may disappear in future&nbsp;versions.</p>
+<ul>
+<li><code>aset</code> - replaced by TinyScheme&#8217;s <code>vector-set!</code></li>
+<li><code>aref</code> - replaced by TinyScheme&#8217;s <code>vector-ref</code></li>
+<li><code>fopen</code> - replaced by TinyScheme&#8217;s <code>open-input-file</code></li>
+<li><code>mapcar</code> - replaced by TinyScheme&#8217;s <code>map</code></li>
+<li><code>nil</code> - replaced by TinyScheme&#8217;s <code>'()</code></li>
+<li><code>nreverse</code> - replaced by TinyScheme&#8217;s <code>reverse</code></li>
+<li><code>pow</code> - replaced by TinyScheme&#8217;s <code>expt</code></li>
+<li><code>prin1</code> - replaced by TinyScheme&#8217;s <code>write</code></li>
+<li><code>print</code> - replaced by TinyScheme&#8217;s <code>write</code> (along with <code>newline</code>)</li>
+<li><code>strcat</code> - replaced by TinyScheme&#8217;s <code>string-append</code></li>
+<li><code>string-lessp</code> - replaced by TinyScheme&#8217;s <code>string&lt;?</code></li>
+<li><code>symbol-bound?</code> - replaced by TinyScheme&#8217;s <code>defined?</code></li>
+<li><code>the-environment</code> - replaced by TinyScheme&#8217;s <code>current-environment</code></li>
+<li><code>*pi*</code> - the constant <em>pi</em> is not predefined in TinyScheme but can be defined as <code>(* 4 (atan 1.0))</code></li>
+<li><code>butlast</code> - is not available in TinyScheme but alternate coding using <code>(reverse (cdr (reverse x)))</code> is&nbsp;possible</li>
+<li><code>cons-array</code> - replaced by TinyScheme&#8217;s <code>make-vector</code></li>
+</ul>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>There are some other differences between the original Script-fu and the Script-fu of <span class="caps">GIMP</span> 2.4 but they should have little or no impact on existing scripts because of their rarity. These include the syntax for the <code>catch</code>/<code>throw</code> statements (which trap errors) and the <code>bytes-append</code> function (which does not seem to appear in any published Script-fu). If you encounter scripts containing such problems, please post on the <span class="caps">GIMP</span> developers mailing list outlining your&nbsp;problems.</p>
+<p>More information about the Scheme syntax of Script-Fu can be found in the <em>Revised<sup>5</sup> Report on the Algorithmic Language Scheme</em>, also know as <a href="https://schemers.org/Documents/Standards/R5RS/HTML/"><span class="caps">R5RS</span></a>. Tinyscheme does not support all features of <span class="caps">R5RS</span>, but if a precedure is available, it is supposed to behave like&nbsp;documented.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='../release-notes/index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../bugs/index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/docs/script-fu-update.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:58:29 GMT -->
+</html>

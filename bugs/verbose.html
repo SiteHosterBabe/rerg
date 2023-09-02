@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/bugs/verbose.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:58:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - Obtain Stack Trace</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='verbose.html' />
+        <meta itemprop='name' content='GIMP - Obtain Stack Trace' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='verbose.html' />
+        <meta property='og:title' content='GIMP - Obtain Stack Trace' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='lillolollo' />
+        <meta property='og:author' content='lillolollo' />
+
+        <meta itemprop='description' content="To find out the cause for troubles in GIMP it’s sometimes necessary to find out some internal information from GIMP. You can get them with the following steps, especially if you are asked for it on Gitlab: Windows Linux Linux with Flatpak Flatpak GIMP 2-10 Flatpak GIMP 2-99 Flatpak …" />
+        <meta property='og:description' content="To find out the cause for troubles in GIMP it’s sometimes necessary to find out some internal information from GIMP. You can get them with the following steps, especially if you are asked for it on Gitlab: Windows Linux Linux with Flatpak Flatpak GIMP 2-10 Flatpak GIMP 2-99 Flatpak …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="../docs/index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="../docs/index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1>Obtain Stack&nbsp;Trace</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <p>To find out the cause for troubles in <span class="caps">GIMP</span> it&#8217;s sometimes necessary to find out some internal information from <span class="caps">GIMP</span>. You can get them with the following steps, especially if you are asked for it on&nbsp;Gitlab: </p>
+<ul>
+<li><a href="#on-windows">Windows</a></li>
+<li><a href="#on-linux">Linux</a></li>
+<li><a href="#on-linux-with-flatpak">Linux with&nbsp;Flatpak</a></li>
+<li><a href="#for-gimp-2-10">Flatpak <span class="caps">GIMP</span>&nbsp;2-10</a></li>
+<li><a href="#for-gimp-2-99">Flatpak <span class="caps">GIMP</span>&nbsp;2-99</a></li>
+<li><a href="#for-gimp-nightly">Flatpak <span class="caps">GIMP</span>&nbsp;nightly</a></li>
+<li><a href="#on-macos-x">MacOS</a></li>
+</ul>
+<h2 id="on-windows">On Windows<a class="headerlink" href="#on-windows" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Open the Windows command prompt&nbsp;window:</p>
+</li>
+<li>
+<p><strong>Windows Vista and Windows 7</strong> users: Click start, type cmd and then press <Enter>. </p>
+</li>
+<li>
+<p><strong>Windows 8</strong> users: on the start screen with the tiles: enter cmd and then press <Enter>. </p>
+</li>
+<li>
+<p><strong>Windows 10</strong> users: Click start, type cmd and then press <Enter>. </p>
+</li>
+<li>
+<p><strong>Windows 11</strong> users: Click start, type cmd in the search bar. You will see the command prompt    appear as the best match.       click on it or hit Enter to open&nbsp;it. </p>
+</li>
+</ol>
+<p>A black window will open - the Windows command prompt&nbsp;window. </p>
+<ol>
+<li>Enter <code>"c:\program files\gimp 2\bin\gimp-2.10" --verbose --console-messages</code></li>
+</ol>
+<p>After a moment a black command prompt window will open, having the title &#8216;<span class="caps">GIMP</span> output. You can minimize this window, but don&#8217;t close it&#8217;. Note that the start might take a bit longer because <span class="caps">GIMP</span> now writes output&nbsp;data. </p>
+<ol>
+<li>
+<p>When the <span class="caps">GIMP</span> application has started, execute the steps to reproduce the&nbsp;error.</p>
+</li>
+<li>
+<p>Select the <span class="caps">GIMP</span> output and copy it the clipboard: click on the <span class="caps">GIMP</span> icon in the upper left window corner, then Edit/Select All, then&nbsp;Edit/Copy.</p>
+</li>
+<li>
+<p>Open your Internet browser, open your particular bug and paste the&nbsp;message.</p>
+</li>
+</ol>
+<h2 id="on-linux">On Linux<a class="headerlink" href="#on-linux" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Open a terminal&nbsp;window.</p>
+</li>
+<li>
+<p>Enter <code>gimp --verbose --console-messages</code></p>
+</li>
+</ol>
+<p>Note that the start might take a bit longer because <span class="caps">GIMP</span> now writes output data.</P>
+
+<ol>
+<li>
+<p>When the <span class="caps">GIMP</span> application has started, execute the steps to reproduce the&nbsp;error.</p>
+</li>
+<li>
+<p>Select the <span class="caps">GIMP</span> output from the terminal window and copy it the&nbsp;clipboard.</p>
+</li>
+<li>
+<p>Open your Internet browser, open your particular bug and paste the&nbsp;message.</p>
+</li>
+</ol>
+<h2 id="on-linux-with-flatpak">On Linux with Flatpak<a class="headerlink" href="#on-linux-with-flatpak" title="Permanent link">&para;</a></h2>
+<p>Copy and paste all the&nbsp;commands</p>
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>list<span class="w"> </span><span class="p">|</span>grep<span class="w"> </span>org.gimp.GIMP
+</code></pre></div>
+
+<p>This command returns information about <span class="caps">GIMP</span>-related&nbsp;packages. </p>
+<p>You need to check where <span class="caps">GIMP</span> is installed, as shown in the column Installation. This way you will know whether to install or update in <code>--system</code> or <code>--user</code>.</p>
+<p>If a flatpak command asks where to install a component, always choose the same installation&nbsp;target.</p>
+<p>You must therefore follow the instructions below depending on the version of <span class="caps">GIMP</span> you have&nbsp;installed </p>
+<h3 id="for-gimp-2-10">For <span class="caps">GIMP</span> 2-10<a class="headerlink" href="#for-gimp-2-10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>org.gimp.GIMP.Debug
+</code></pre></div>
+
+<p>In the command below, replace <code>--system</code> with <code>--user</code> if <span class="caps">GIMP</span> was installed as &#8220;user&#8221; installation (cf. result of above&nbsp;command).</p>
+<div class="highlight"><pre><span></span><code><span class="nv">FLATPAK_SDK</span><span class="o">=</span><span class="sb">`</span>flatpak<span class="w"> </span>--system<span class="w"> </span>remote-info<span class="w"> </span>flathub<span class="w"> </span>org.gimp.GIMP//stable<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Sdk:<span class="w"> </span><span class="p">|</span>sed<span class="w"> </span><span class="s1">&#39;s/^ *Sdk: *\(.*\)/\1/&#39;</span><span class="sb">`</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nv">FLATPAK_SDK_DEBUG</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$FLATPAK_SDK</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s$\([^/]*\)/\(.*\)$\1.Debug/\2$&#39;</span><span class="sb">`</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span><span class="nv">$FLATPAK_SDK</span><span class="w"> </span><span class="nv">$FLATPAK_SDK_DEBUG</span>
+</code></pre></div>
+
+<p>Then run <span class="caps">GIMP</span> with the&nbsp;command </p>
+
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>run<span class="w"> </span>--devel<span class="w"> </span>org.gimp.GIMP
+</code></pre></div>
+
+<p>try to replicate the crash and add the obtained stacktrace to the issue&nbsp;report</p>
+<h3 id="for-gimp-2-99">For <span class="caps">GIMP</span> 2-99<a class="headerlink" href="#for-gimp-2-99" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>flathub-beta<span class="w">  </span>org.gimp.GIMP.Debug//beta
+</code></pre></div>
+
+<p>In the command below, replace <code>--system</code> with <code>--user</code> if <span class="caps">GIMP</span> was installed as &#8220;user&#8221; installation (cf. result of above&nbsp;command).</p>
+<div class="highlight"><pre><span></span><code><span class="nv">FLATPAK_SDK</span><span class="o">=</span><span class="sb">`</span>flatpak<span class="w"> </span>remote-info<span class="w"> </span>flathub-beta<span class="w"> </span>org.gimp.GIMP//beta<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Sdk:<span class="w"> </span><span class="p">|</span>sed<span class="w"> </span><span class="s1">&#39;s/^ *Sdk: *\(.*\)/\1/&#39;</span><span class="sb">`</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nv">FLATPAK_SDK_DEBUG</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span><span class="w"> </span><span class="nv">$FLATPAK_SDK</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s$\([^/]*\)/\(.*\)$\1.Debug/\2$&#39;</span><span class="sb">`</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span><span class="nv">$FLATPAK_SDK</span><span class="w"> </span><span class="nv">$FLATPAK_SDK_DEBUG</span>
+</code></pre></div>
+
+<p>then run <span class="caps">GIMP</span> with the&nbsp;command</p>
+
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>run<span class="w"> </span>--devel<span class="w"> </span>org.gimp.GIMP//beta
+</code></pre></div>
+
+<p>try to replicate the crash and add the obtained stacktrace to the issue&nbsp;report</p>
+<h3 id="for-gimp-nightly">For <span class="caps">GIMP</span> nightly<a class="headerlink" href="#for-gimp-nightly" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>gnome-nightly<span class="w">  </span>org.gimp.GIMP.Debug
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>remote-info<span class="w"> </span>gnome-nightly<span class="w"> </span>org.gimp.GIMP//master<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Sdk:<span class="w"> </span><span class="p">|</span>sed<span class="w"> </span><span class="s1">&#39;s/^ *Sdk: *\(.*\)/\1/&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>gnome-nightly<span class="w"> </span>org.gnome.Sdk.Debug//master
+</code></pre></div>
+
+<p>then run <span class="caps">GIMP</span> with the&nbsp;command</p>
+
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>run<span class="w"> </span>--devel<span class="w"> </span>org.gimp.GIMP//nightly
+</code></pre></div>
+
+<p>try to replicate the crash and add the obtained stacktrace to the issue&nbsp;report</p>
+<h2 id="on-macos-x">On MacOS X<a class="headerlink" href="#on-macos-x" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p>Go to Applications/Utilities, then&nbsp;Terminal.</p>
+</li>
+<li>
+<p>Enter <code>/Applications/GIMP.app/Contents/MacOS/gimp --verbose --console-messages</code>
+  Note that the start might take a bit longer because <span class="caps">GIMP</span> now writes output&nbsp;data.</p>
+</li>
+<li>
+<p>When the <span class="caps">GIMP</span> application has started, execute the steps to reproduce the&nbsp;error.</p>
+</li>
+<li>
+<p>Select the <span class="caps">GIMP</span> output from the terminal window and copy it the clipboard. In the Mac <span class="caps">OS</span> X terminal use Edit/Select All, then&nbsp;Edit/Copy.</p>
+</li>
+<li>
+<p>Open your Internet browser, open your particular bug and paste the&nbsp;message.</p>
+</li>
+</ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="../docs/index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='../release-notes/index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='../docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/bugs/verbose.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:58:29 GMT -->
+</html>

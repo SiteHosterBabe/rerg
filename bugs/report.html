@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebSite">
+    
+<!-- Mirrored from www.gimp.org/bugs/report.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <title>GIMP - Reporting an Issue</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="../images/wilber32.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/grid.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/gimp.css" />
+        <link rel="stylesheet" type="text/css" href="../theme/css/font-awesome-4.4.0/css/font-awesome.min.css" />
+
+        <link href="../theme/css/tipuesearch/tipuesearch.css" rel="stylesheet">
+
+        <link href="../feeds/atom.xml" type="application/atom+xml" rel="alternate" title="GIMP Atom Feed" />
+        <link href="../feeds/rss.xml" type="application/rss+xml" rel="alternate" title="GIMP RSS Feed" />
+
+
+        <link rel='stylesheet' type='text/css' href="../theme/css/page.css" />
+        <link rel='stylesheet' type='text/css' href="../theme/css/pygments-default.css" />
+        
+        <meta itemprop='url' content='report.html' />
+        <meta itemprop='name' content='GIMP - Reporting an Issue' />
+        <meta itemprop='image' content='../images/frontpage/wilber-big.png' />
+
+        <meta property='og:url' content='report.html' />
+        <meta property='og:title' content='GIMP - Reporting an Issue' />
+        <meta property='og:image' content='../images/frontpage/wilber-big.png' />
+
+        <meta itemprop='author' content='Pat David' />
+        <meta property='og:author' content='Pat David' />
+
+        <meta itemprop='description' content="Making good bug reports is a great way to help increase the software quality of GIMP. A good bug report provides: unambiguous step-by-step instructions on how to reproduce the bug; what result is expected; and what the actual result is. This makes it easy for the developers to reproduce and …" />
+        <meta property='og:description' content="Making good bug reports is a great way to help increase the software quality of GIMP. A good bug report provides: unambiguous step-by-step instructions on how to reproduce the bug; what result is expected; and what the actual result is. This makes it easy for the developers to reproduce and …" />
+
+
+
+    </head>
+
+<body id="index" class="home">
+
+
+        <nav id="menu">
+            <ul>
+                <li id='gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg' id='menuWilber'  alt='Tiny Wilber'> GIMP</a></li>
+                <li><a href="../downloads/index.html"><i class="fa fa-download"></i> Download</a></li>
+                <li><a href="../news/index.html"><i class="fa fa-newspaper-o"></i> News</a></li>
+                <li><a href="../about/index.html"><i class="fa fa-info-circle"></i> About</a></li>
+                <li><a href="../docs/index.html"><i class="fa fa-book"></i> Docs</a></li>
+                <li><a href="../develop/index.html"><i class="fa fa-code"></i> Participate</a></li>
+                <li><a href="../tutorials/index.html"><i class="fa fa-graduation-cap"></i> Tutorials</a></li>
+
+
+                <li>
+                    <a class='donate-orange' href="../donating/index.html"><i class="fa fa-money"></i> Donate</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=gimp%40gnome%2eorg&amp;lc=US&amp;item_name=Donation%20to%20GIMP%20Project&amp;item_number=106&amp;currency_code=USD" title='Donate with PayPal' class='donate-type'>
+                        <img src='../theme/images/pp16.png' alt="PayPal" >
+                    </a>
+                </li>
+
+            </ul>
+            <i class="fa fa-chevron-up" id='nav-up'></i>
+        </nav><!-- /#menu -->
+
+        <div id='navstrip' class='nav-down'>
+            <a href="../index.html" class='navfive'>
+                <img id='wilber-tiny' src="../images/wilbericon.svg"  alt='Wilber Icon'><br/>
+                GIMP
+            </a>
+            <a href="../news/index.html" class='navfive'>
+                <i class="fa fa-newspaper-o" ></i><br/>
+                News
+            </a>
+            <a href="../docs/index.html" class='navfive'>
+                <i class="fa fa-book" ></i><br/>
+                Docs
+            </a>
+            <a href="../tutorials/index.html" class='navfive'>
+                <i class="fa fa-graduation-cap" ></i><br/>
+                Tutorials
+            </a>
+            <a href="#bottom-nav" id='navel' class='navfive' >
+                <i class="fa fa-bars" ></i><br/>
+                More
+            </a>
+        </div>
+
+        <a id="navel-old" href="#bottom-nav" ><i class="fa fa-bars"></i></a>
+
+    <div id="pushPage">
+
+
+
+
+    <div class="container title">
+        <div class="row clearfix">
+            <div class="column full">
+                <h1>Reporting an&nbsp;Issue</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <section class='page_content'>
+        <div class='container'>
+            <div class='row clearfix'>
+                <div class='column full'>
+                    <p>Making good bug reports is a great way to help increase the software quality of <span class="caps">GIMP</span>. A good bug report&nbsp;provides:</p>
+<ul>
+<li>unambiguous step-by-step instructions on how to reproduce the&nbsp;bug;</li>
+<li>what result is&nbsp;expected;</li>
+<li>and what the actual result&nbsp;is.</li>
+</ul>
+<p>This makes it easy for the developers to reproduce and fix the&nbsp;bug.</p>
+<p>Related to bug reports are enhancement requests. It is recommended to discuss
+enhancements with developers first, for instance on <a href="../discuss.html#irc-matrix"><span class="caps">IRC</span></a>
+or in the <a href="../discuss.html#forums">forums</a>. This is to make sure that the
+enhancement requests that are filed are well-specified and aligned with
+the overall goals the developers have for <span class="caps">GIMP</span>.</p>
+<div class="toc">
+<ul>
+<li><a href="#reporting-a-bug">Reporting a&nbsp;Bug</a></li>
+<li><a href="#the-wait-patiently-part">The Wait Patiently&nbsp;Part</a></li>
+<li><a href="#security-bugs">Security&nbsp;Bugs</a></li>
+</ul>
+</div>
+<h2 id="reporting-a-bug">Reporting a Bug<a class="headerlink" href="#reporting-a-bug" title="Permanent link">&para;</a></h2>
+<p>The goal is to give the developers as much information as possible to help them understand what needs to be&nbsp;fixed:</p>
+<ol>
+<li>
+<p>Use <code>gimp --version</code> or the about dialog (<code>Help → About GIMP</code>) to check your
+    <span class="caps">GIMP</span> version. Next compare to the most recent <span class="caps">GIMP</span> release on
+    <a href="../index.html">www.gimp.org</a>. If your <span class="caps">GIMP</span> is old, update and try
+    to reproduce the bug. Your bug may have been fixed in a recent&nbsp;release.</p>
+</li>
+<li>
+<p>Attempt to reproduce the problem. Go do what you were doing when it happened and see if you can trigger the bug&nbsp;again.</p>
+<p>If you know how to do so, start the program from a terminal, or you can follow the <a href="verbose.html">instructions</a>.
+Sometimes it will output helpful error messages. After reproducing
+the bug, copy the error messages from your terminal so you can paste
+them in the bug report. It is better to give too much information
+than not&nbsp;enough.</p>
+<p>To narrow down the exact cause of the problem, attempt to reproduce
+it in other ways. Prepare yourself to explain how to reproduce it in
+your bug report. If you are running <span class="caps">GIMP</span> in another language, try
+<a href="https://docs.gimp.org/en/gimp-fire-up.html#gimp-concepts-running-language">switching <span class="caps">GIMP</span> to
+English</a>
+so you can report menu items exactly with the English menu item
+name. It simplifies developers&#8217;&nbsp;task.</p>
+<p>If you cannot reproduce the bug and don&#8217;t have any reliable information, reporting might be fruitless and only waste everyone&#8217;s time.
+If it recurs, consult with appropriate <a href="../discuss.html">discussion channels</a>. Perhaps someone else can find the key to reproducing&nbsp;it.</p>
+</li>
+<li>
+<p>Go to <a href="https://gitlab.gnome.org/GNOME/gimp/issues/"><span class="caps">GIMP</span> issues</a>. If you don&#8217;t have a login yet, follow the directions to create&nbsp;one.</p>
+</li>
+<li>
+<p>Select &#8220;New issue&#8221;.
+    <figure>
+    <img src="new-issue.png">
+    </figure></p>
+<p>Choose a template to pre-populate the <em>Description</em> field with important information to help the developers track down the&nbsp;problem:</p>
+<p><figure>
+<img src="new-issue-template.png">
+</figure></p>
+<p>Give your bug a good Title and if you chose a template you should see some text in the Description field&nbsp;already.</p>
+</li>
+<li>
+<p>Here in the Description you&#8217;ll have to tell the developers everything about your system, your version of <span class="caps">GIMP</span>, and your bug. Just do your best to tell them about it. A crappy bug report is better than no report at all, but if you write down everything clearly you&#8217;ll be going a long way to helping get the bug&nbsp;addressed.</p>
+<p><figure>
+<img src="new-issue-description.png">
+</figure></p>
+<p>Remember, try to be as clear and concise as possible!  This is immensely helpful in tracking down what the problem is and how to possibly fix&nbsp;it.</p>
+<p>Finally, please add the output you get from running <code>gimp --version
+--verbose</code> to your bug report, and publish the report by clicking the blue
+&#8220;<em>Create issue</em>&#8221;&nbsp;button.</p>
+</li>
+<li>
+<p>You should not expect immediate responses as contributors have a lot
+    of tasks, though they try to be reactive when possible. They may ask you for
+    more information and will tell you what to do to get it (you should get
+    email notifications). We don&#8217;t expect you to do answer immediately as well,
+    though we expect you to follow up&nbsp;eventually.</p>
+</li>
+<li>
+<p>If you later get more information (like a more specific error message or
+    fancy stuff like a trace), add a comment to your original bug with that&nbsp;information.</p>
+</li>
+<li>
+<p>It is especially important to add a comment if you somehow resolve
+    your bug. For example, you update something else on your system and
+    the bug no longer appears. In that case, add a comment describing
+    what you updated from what version to what version. This helps everyone and
+    saves a lot of time which can be used to fix other bugs or implement nice&nbsp;features.</p>
+</li>
+</ol>
+<h2 id="the-wait-patiently-part">The Wait Patiently Part<a class="headerlink" href="#the-wait-patiently-part" title="Permanent link">&para;</a></h2>
+<p><em>Whee!!</em> You survived! If you managed to get through all this and submit your
+bug report, be happy. Be proud as a contributor to the&nbsp;community!</p>
+<p>You will later get e-mails about your bug. It may not be immediate. Since <span class="caps">GIMP</span>
+is developed by a community, by volunteers, sometimes it may take some time.
+Though we try to always answer.
+Similarly when we ask you questions, we don&#8217;t expect you to answer immediately,
+though we expect you to answer eventually. Otherwise it makes no sense. The
+basis is that we acknowledge that everyone has a life outside of <span class="caps">GIMP</span>, you as
+much as the&nbsp;developers.</p>
+<p>Answers might include a request for more information. If you get something that
+says your bug is not a bug, was already fixed or is a duplicate to another
+report, do not be discouraged from reporting in the future. Next time it might
+be. Submitting careful bug reports and providing additional information where
+possible helps make <span class="caps">GIMP</span> better. The day will come where you submit a bug and
+later get an e-mail that says your bug is &#8220;<span class="caps">FIXED</span>&#8221; or &#8220;<span class="caps">RESOLVED</span>&#8221;. Then you will
+know that some developer out there found your bug, reproduced it, and fixed it.&nbsp;🎉</p>
+<h2 id="security-bugs">Security Bugs<a class="headerlink" href="#security-bugs" title="Permanent link">&para;</a></h2>
+<p>Some bug reports may be related to security issues.
+For example, a file plug-in may be vulnerable to a buffer overflow allowing arbitrary code execution when loading an&nbsp;image.</p>
+<p>We believe that the best way to report these vulnerabilities is still through
+our <a href="https://gitlab.gnome.org/GNOME/gimp/-/issues">GitLab issues</a>, as described
+above. This will ensure that the bug is reviewed and handled quickly.  The only
+difference is that you will want to check the box &#8220;<em>This issue is confidential
+and should only be visible to team members with at least Reporter access.</em>&#8221; in
+the bug report creation form. This will hide the bug report from anyone else but
+core&nbsp;members.</p>
+<p>But if you really do not want to use GitLab for security reports and you do not
+mind some extra delay, you can also contact a limited set of <span class="caps">GIMP</span> developers by
+mail <code>@gimp.org</code>, using the special alias <code>security</code>.  What will happen next is
+that a developer will review the issue and submit it in GitLab, usually as a
+hidden bug report only visible to&nbsp;developers.</p>
+<p>This will take a bit longer than if you directly submit the bug yourself, but we
+know that some people have a policy of not disclosing security vulnerabilities
+publicly, so we provide that address for their&nbsp;convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+        <footer id="contentinfo" class="body">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id='nav-btm-gimp-home'><a href="../index.html"><img src='../images/wilbericon.svg'  id='footerWilber' alt='Tiny Wilber'> GIMP</a></li>
+                            <li id="nav-btm-downloads"><a href="../downloads/index.html"><i class="fa fa-download fa-fw"></i> Download</a></li>
+                            <li id="nav-btm-news"><a href="../news/index.html"><i class="fa fa-newspaper-o fa-fw"></i> News</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-about"><a href="../about/index.html"><i class="fa fa-info-circle fa-fw"></i> About GIMP</a></li>
+                            <li id="nav-btm-docs"><a href="../docs/index.html"><i class="fa fa-book fa-fw"></i> Documentation</a></li>
+                            <li id="nav-btm-donating"><a href="../donating/index.html"><i class="fa fa-money fa-fw"></i> Donate</a></li>
+                        </ul>
+                    </div>
+                    <div class="column third">
+                        <ul class="nav-bottom">
+                            <li id="nav-btm-develop">
+                                <a href="../develop/index.html">
+                                    <i class="fa fa-code fa-fw"></i> Get Involved
+                                </a>
+                            </li>
+                            <li id="nav-btm-tutorials"><a href="../tutorials/index.html"><i class="fa fa-graduation-cap fa-fw"></i> Tutorials</a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class='row clearfix secondary-links'>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='../features/index.html'>Features</a></li>
+                            <li><a href='../release-notes/index.html'>Release Notes</a></li>
+                            <li><a href='https://developer.gimp.org/core/roadmap/'>Roadmap</a></li>
+                            <li><a href='../docs/userfaq.html' title='Frequently Asked Questions'>FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul>
+                            <li><a href='index.html'>Bug Reports</a></li>
+                            <li><a href='../discuss.html'>Discuss</a></li>
+                            <li><a href='../books/index.html'>Books</a></li>
+                            <li><a href='../donating/sponsors.html'>Sponsors</a></li>
+                        </ul>
+                    </div>
+
+                    <div class='column third'>
+                        <ul class='social-links'>
+                            <li><a rel="me" href='https://floss.social/@GIMP' title='Follow us on Mastodon'>Mastodon</a></li>
+                            <li><a href='https://twitter.com/gimp_official' title='Follow us on Twitter'>Twitter</a></li>
+                            <li><a href='https://www.facebook.com/gimpofficial/' title='Follow us on Facebook'>Facebook</a></li>
+                            <li><a href='https://discuss.pixls.us/gimp/' title='Join us on pixls.us forum'>pixls.us (forum)</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row clearfix bottom">
+                    <div class="column half flow-opposite">
+                        <a href="../feeds/atom.xml">GIMP News Feed <i class='fa fa-rss'></i></a> | <a href="../webmasters.html">Contacting Us</a>
+                    </div>
+                    <div class="column half">
+                        <p>
+                        <small>
+                            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+                                <img alt="Creative Commons License" src="../images/creativecommons/by-sa-80x15.png">
+                            </a>
+                            <br>
+                            Unless otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">The GIMP Website</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="../team.html" property="cc:attributionName" rel="cc:attributionURL">The GIMP Team</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </small>
+                        </p>
+                    </div>
+                </div>
+
+                <div class='row clearfix'>
+                    <div class='column full'>
+                        <form action='https://duckduckgo.com/' id='search-form'>
+                            <input type='text' name='q' id='tipue_search_input' autocomplete='off' required placeholder='Search with DuckDuckGo'>
+                            <input type='hidden' name='sites' value='www.gimp.org'>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </footer><!-- /#contentinfo -->
+
+    </div>
+
+    <script async src='../js/push-menu.js'></script>
+
+    <script async src='../js/search-embed.js'></script>
+
+</body>
+
+<!-- Mirrored from www.gimp.org/bugs/report.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 08:54:57 GMT -->
+</html>
