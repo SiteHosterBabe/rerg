@@ -1,0 +1,211 @@
+body {
+    background-color: #0e2426;
+}
+
+#pushPage {
+    background-color: white;
+}
+
+
+.page_content {
+    text-align: left;
+    padding-top: 0;
+}
+
+.page_content h1,
+.page_content h2,
+.page_content h3,
+.page_content h4,
+.page_content h5,
+.page_content h6 {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+.page_content p + h2,
+.page_content p + h3,
+.page_content p + h4,
+.page_content p + h5,
+.page_content p + h6 {
+    margin-top: 2rem;
+}
+
+.page_content ul, .page_content ol {
+    max-width: 33rem;
+    margin: 0 auto;
+    display: block;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+    font-weight: normal;
+}
+
+li {
+    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.25rem; */
+}
+
+li > ul {
+    margin-top: 0.5rem !important;
+}
+
+.page_content p {
+    max-width: 34rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.page_content blockquote {
+    border: solid 1px #ccc;
+    margin: 0 auto;
+    max-width: 34rem;
+    padding: 0.6rem;
+    border-left: solid 3px #666;
+    margin-bottom: 1rem;
+}
+
+.page_content blockquote p {
+    margin-bottom: 0;
+}
+
+figure {
+    display: table;
+    margin: 1rem auto;
+}
+
+figure img {
+    /* width: initial; */
+    max-width: 100%;
+    /* margin-bottom: 0.5rem;
+     */
+    /*max-width: 35rem;
+     */
+}
+
+figure figcaption {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.3rem;
+    display: table-caption;
+    caption-side: bottom;
+    font-weight: 300;
+}
+
+.cc-badge {
+    border-width: 0;
+    width: initial;
+    display: inline;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.container.title {
+    box-shadow: 0 8px 6px -7px #ddd;
+    box-shadow: 0 8px 8px -8px #ccc;
+    margin: 0 auto 1.5rem auto;
+    padding-top: 1.5rem;
+    max-width: 37rem;
+    text-align: center;
+}
+
+.container.title h1 {
+    margin-bottom: 0;
+}
+
+.toc li {
+    margin-bottom: 0;
+}
+
+.toc li ul {
+    margin-bottom: 0;
+    margin-top: 0 !important;
+}
+
+.toc > ul > li {
+    /* margin-top: 1rem;
+     */
+}
+
+.post-info {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+address.vcard.author {
+    display: inline;
+}
+
+.debug {
+    border: dotted 1px #ccc;
+    font-size: 80%;
+}
+
+.codehilite .err {
+    border: none;
+}
+
+span.man, dl.man dt {
+    font-family: monospace;
+}
+
+table.gimpfromsrc {
+    max-width: 40rem;
+    font-size: 0.85rem;
+    margin: 1rem auto;
+}
+
+table.gimpfromsrc td {
+    padding: 0.25rem;
+    border: solid 1px #eee;
+}
+
+table.tut {
+    max-width: 40rem;
+    font-size: 0.85rem;
+    margin: 1rem auto;
+}
+
+table.tut td, table.tut th {
+    padding: 0.25rem;
+}
+
+pre.mail {
+    font-size: 0.75rem;
+    white-space: pre-wrap;
+    border: solid 1px #ccc;
+    padding: 1rem;
+}
+
+.reportBug {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#bugInput {
+    width: 50%;
+    padding-left: 0.2rem;
+}
+
+
+pre.gimprcsmall {
+    font-size: 0.85rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.tRed { color: red; }
+.tGreen { color: green; }
+.tBlue { color: blue; }
+.tCyan { color: cyan; }
+.tMagenta { color: magenta; }
+.tYellow { color: yellow; }
+
+.tGreen { color: #00FF00; }
+.tLightBlue { color: #0080FF; }
+.tBrightBlue { color: #0000ff; }
+.tOrange { color: #ff6f00; }
+

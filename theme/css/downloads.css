@@ -1,0 +1,50 @@
+/*
+ * downloads.css
+ *
+ * Styling specifically for the /downloads/ page
+ *
+ */
+
+    table {
+        max-width: 35rem;
+        margin: 1rem auto;
+    }
+    td, th {
+        padding: 0 1rem;
+    }
+
+    .download-mirrors{
+        word-wrap: break-word;
+    }
+
+    @media ( max-width: 40rem ){
+        .download-mirrors dd {
+            margin-left: 0.5rem;
+        }
+    }
+
+    .os {
+        display: block;
+    }
+
+    #pOSTEST {
+        font-style: italic;
+    }
+
+    .show_links {
+        color: #497bad;
+        cursor: pointer;
+    }
+
+    #download-comment {
+        border: dashed 1px #555;
+        padding: 0.5rem;
+    }
+
+    .mirrors {
+        display: none;
+    }
+    
+    p.tRed {
+        color: red;
+    }

@@ -1,0 +1,55 @@
+.entry-content {
+    text-align: left;
+}
+
+.entry-content p {
+    max-width: 34rem;
+    color: #555;
+}
+
+.entry-content ul {
+    max-width: 33rem;
+    margin: 1rem auto;
+    display: block;
+}
+
+.post-info {
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+#articles {
+    padding-top: 0;
+}
+
+#articles .column.full {
+    text-align: left;
+}
+
+.entry-title, .post-info {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+.post-info {
+    margin-bottom: 1rem;
+}
+
+abbr[title] {
+    border: none;
+    color: #888;
+}
+
+.feed-text {
+    font-size: 0.85rem;
+}
